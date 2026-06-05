@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-architect"
+version = "0.1.0"
+description = "AI agent systems built toward Claude Certified Architect certification"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic",
+    "python-dotenv",
+    "rich",
+    "pydantic",
+    "fastapi",
+    "uvicorn",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agent_platform*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
