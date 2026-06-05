@@ -1,3 +1,7 @@
+if 1==1:
+    from projects.p1_customer_support.src.tools import handle_tool_call
+    print('tools imported successfully')
+
 if 1==2:
 
     from agent_platform.tracing import start_run
@@ -31,7 +35,7 @@ if 1==2:
      {'role': 'user', 'content': [{'type': 'text', 'text': 'Order 12345', 'cache_control': {'type': 'ephemeral'}}]}]
     """
 
-if 1==1:
+if 1==2:
     from agent_platform.retry import with_retry, RetryConfig, ErrorCategory, classify_error
 
     # Test error classification
