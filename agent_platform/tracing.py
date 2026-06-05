@@ -23,6 +23,7 @@ import time # built into Python, gives us timestamps in seconds
 from dataclasses import dataclass, field #  needed when a default value is a mutable object like a list
 from typing import Optional # a type hint meaning "this can be this type OR None"
 from agent_platform.logging import get_logger, log_event #  importing our own module we just built
+import logging # built into Python, gives us log levels like logging.INFO
 
 logger = get_logger(__name__)
 
@@ -92,6 +93,11 @@ class RunTrace:
             started_at=time.time(),
         )
         self.tool_traces.append(trace)
+        log_event(logger, "start_tool", level=logging.INFO,
+            tool_name=trace.tool_name,
+            run_id=self.run_id,
+        )
+
         return trace
 
     # Call this immediately after a tool finishes executing.
@@ -100,9 +106,7 @@ class RunTrace:
     #     response.usage.input_tokens
     #     response.usage.output_tokens
     # Pass error= if the tool raised an exception, otherwise leave as None.
-    def end_tool(
-        self,
-        trace: ToolTrace,
+    def end_tool(self, trace: ToolTrace,
         input_tokens: int = 0,
         output_tokens: int = 0,
         error: Optional[str] = None,
@@ -113,13 +117,16 @@ class RunTrace:
         trace.error = error
         self.total_input_tokens += input_tokens
         self.total_output_tokens += output_tokens
-
+        log_event(logger, "end_tool", level=logging.INFO,
+            tool_name=trace.tool_name,
+            run_id=self.run_id,
+            input_tokens=input_tokens,
+            output_tokens=output_tokens,
+        )
     def finish(self) -> None:
         self.ended_at = time.time()
         total_cost = sum(t.cost_usd for t in self.tool_traces)
-        log_event(
-            logger,
-            "run_complete",
+        log_event(logger, "run_complete", level=logging.INFO,
             run_id=self.run_id,
             project=self.project,
             duration_ms=round(
