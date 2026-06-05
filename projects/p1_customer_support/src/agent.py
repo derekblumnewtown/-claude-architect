@@ -20,6 +20,8 @@ from agent_platform.tracing import start_run
 from agent_platform.cache import add_cache_control, add_cache_control_to_messages
 from agent_platform.retry import with_retry
 from .tools import handle_tool_call
+from .hooks import HookContext, hook_pre_lookup_order, hook_pre_process_refund, hook_post_process_refund
+
 
 logger = get_logger(__name__)
 
@@ -140,6 +142,7 @@ TOOLS = [
 
 
 def run_agent(customer_message: str):
+
     """
     Run the agent loop for a customer message.
     
@@ -150,6 +153,9 @@ def run_agent(customer_message: str):
     4. If stop_reason == "end_turn" → done, return response
     """
     log_event(logger, "agent_loop_started", message_preview=customer_message[:50])
+    
+    # Create hook context to track verified data
+    hook_context = HookContext()
     
     # Create client
     client = anthropic.Anthropic(api_key=config.anthropic_api_key)
@@ -217,20 +223,59 @@ def run_agent(customer_message: str):
         
         elif response.stop_reason == "tool_use":
             # Claude wants to call a tool
-            # Add Claude's response to messages
-            messages.append({"role": "assistant", "content": response.content})
+            # Add Claude's response to messages (only text, not tool_use blocks)
+            assistant_content = []
+            for block in response.content:
+                if hasattr(block, "text"):
+                    assistant_content.append({"type": "text", "text": block.text})
+                elif block.type == "tool_use":
+                    assistant_content.append(block)
+            
+            messages.append({"role": "assistant", "content": assistant_content})
             
             # Execute the tool
             tool_results = []
             for block in response.content:
+
+                # Claude wants a tool call
                 if block.type == "tool_use":
+ 
                     log_event(logger, "tool_execution",
                         tool_name=block.name,
                         iteration=iteration
                     )
                     
+                    # Check PreToolUse hooks
+                    hook_error = None
+                    
+                    if block.name == "lookup_order":
+                        hook_error = hook_pre_lookup_order(block.input, hook_context)
+                    
+                    elif block.name == "process_refund":
+                        hook_error = hook_pre_process_refund(block.input, hook_context)
+                        
+                    if hook_error:
+                        # Hook blocked the call — log it but don't send back to Claude yet
+                        log_event(logger, "hook_blocked_tool_call",
+                            tool_name=block.name,
+                            reason=hook_error.get("description")
+                        )
+                        # Don't add to tool_results — the hook prevents execution
+                        continue
+                    
                     # Call the tool
                     tool_result = handle_tool_call(block.name, block.input)
+                    
+                    # Check PostToolUse hooks
+                    if block.name == "process_refund":
+                        tool_result = hook_post_process_refund(tool_result, block.input, hook_context)
+                    
+                    # Update hook context based on successful tool results
+                    if tool_result.get("success"):
+                        if block.name == "get_customer":
+                            hook_context.set_customer_verified(tool_result["customer_id"])
+                        elif block.name == "lookup_order":
+                            hook_context.set_order_verified(tool_result["order_id"])
                     
                     log_event(logger, "tool_result",
                         tool_name=block.name,
