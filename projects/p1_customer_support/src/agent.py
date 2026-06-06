@@ -1,18 +1,18 @@
 """
 projects/p1_customer_support/src/agent.py
 The agentic loop for the customer support agent.
-
+ 
 This is where everything comes together:
 - Takes customer messages
 - Sends to Claude
 - Executes tools Claude requests
 - Handles hooks
 - Stops when Claude is done
-
+ 
 Run with:
-    python projects/p1_customer_support/src/agent.py
+    python -m projects.p1_customer_support.src.agent
 """
-
+ 
 import anthropic
 from agent_platform.config import config
 from agent_platform.logging import get_logger, log_event
@@ -21,23 +21,23 @@ from agent_platform.cache import add_cache_control, add_cache_control_to_message
 from agent_platform.retry import with_retry
 from .tools import handle_tool_call
 from .hooks import HookContext, hook_pre_lookup_order, hook_pre_process_refund, hook_post_process_refund
-
-
+ 
+ 
 logger = get_logger(__name__)
-
-
+ 
+ 
 # System prompt — tells Claude what to do
 SYSTEM_PROMPT = """
 You are a helpful customer support agent for AcmeCorp.
-
+ 
 Your job is to help customers with refund requests.
-
+ 
 You have access to four tools:
 1. get_customer - Look up a customer by email. ALWAYS call this first.
 2. lookup_order - Find an order for a verified customer
 3. process_refund - Process a refund for a verified order
 4. escalate_to_human - Hand off to a human agent
-
+ 
 RULES:
 - Always verify the customer first with get_customer
 - Always look up the order before processing a refund
@@ -46,8 +46,8 @@ RULES:
 - If anything fails, escalate to a human
 - Be friendly and clear in all responses
 """
-
-
+ 
+ 
 # Tool definitions for Claude
 TOOLS = [
     {
@@ -139,177 +139,204 @@ TOOLS = [
         }
     }
 ]
-
-
-def run_agent(customer_message: str):
-
-    """
-    Run the agent loop for a customer message.
-    
-    This is the main agentic loop:
-    1. Send customer message to Claude
-    2. Claude responds — check stop_reason
-    3. If stop_reason == "tool_use" → execute tool, send result back, loop
-    4. If stop_reason == "end_turn" → done, return response
-    """
-    log_event(logger, "agent_loop_started", message_preview=customer_message[:50])
-    
-    # Create hook context to track verified data
-    hook_context = HookContext()
-    
-    # Create client
-    client = anthropic.Anthropic(api_key=config.anthropic_api_key)
-    
-    # Start tracing this run
-    run = start_run(run_id="customer-support-001", project="p1_customer_support")
-    
-    # Messages list — will grow as we loop
-    messages = [
-        {"role": "user", "content": customer_message}
-    ]
-    
-    iteration = 0
-    max_iterations = 10
-    
-    while iteration < max_iterations:
-        iteration += 1
-        log_event(logger, "agent_iteration", iteration=iteration)
-        
-        # Call Claude
-        tool = run.start_tool("claude_api_call")
-        
-        response = with_retry(
-            func=lambda: client.messages.create(
-                model=config.dev_model,
-                max_tokens=1024,
-                system=add_cache_control(SYSTEM_PROMPT),
-                tools=TOOLS,
-                messages=add_cache_control_to_messages(messages, cache_last_n=1)
-            ),
-            operation_name="agent_api_call"
-        )
-        
-        run.end_tool(tool,
-            input_tokens=response.usage.input_tokens,
-            output_tokens=response.usage.output_tokens
-        )
-        
-        log_event(logger, "claude_response",
-            stop_reason=response.stop_reason,
-            iteration=iteration
-        )
-        
-        # Check stop_reason
-        if response.stop_reason == "end_turn":
-            # Claude is done — extract and return response
-            assistant_message = ""
-            for block in response.content:
-                if hasattr(block, "text"):
-                    assistant_message += block.text
-            
-            log_event(logger, "agent_loop_complete",
-                iterations=iteration,
-                final_message_preview=assistant_message[:50]
-            )
-            
-            print("\n" + "="*50)
-            print("AGENT RESPONSE")
-            print("="*50)
-            print(assistant_message)
-            print("="*50 + "\n")
-            
-            run.finish()
-            return assistant_message
-        
-        elif response.stop_reason == "tool_use":
-            # Claude wants to call a tool
-            # Add Claude's response to messages (only text, not tool_use blocks)
-            assistant_content = []
-            for block in response.content:
-                if hasattr(block, "text"):
-                    assistant_content.append({"type": "text", "text": block.text})
-                elif block.type == "tool_use":
-                    assistant_content.append(block)
-            
-            messages.append({"role": "assistant", "content": assistant_content})
-            
-            # Execute the tool
-            tool_results = []
-            for block in response.content:
-
-                # Claude wants a tool call
-                if block.type == "tool_use":
  
-                    log_event(logger, "tool_execution",
-                        tool_name=block.name,
-                        iteration=iteration
-                    )
-                    
-                    # Check PreToolUse hooks
-                    hook_error = None
-                    
-                    if block.name == "lookup_order":
-                        hook_error = hook_pre_lookup_order(block.input, hook_context)
-                    
-                    elif block.name == "process_refund":
-                        hook_error = hook_pre_process_refund(block.input, hook_context)
-                        
-                    if hook_error:
-                        # Hook blocked the call — log it but don't send back to Claude yet
-                        log_event(logger, "hook_blocked_tool_call",
-                            tool_name=block.name,
-                            reason=hook_error.get("description")
-                        )
-                        # Don't add to tool_results — the hook prevents execution
-                        continue
-                    
-                    # Call the tool
-                    tool_result = handle_tool_call(block.name, block.input)
-                    
-                    # Check PostToolUse hooks
-                    if block.name == "process_refund":
-                        tool_result = hook_post_process_refund(tool_result, block.input, hook_context)
-                    
-                    # Update hook context based on successful tool results
-                    if tool_result.get("success"):
-                        if block.name == "get_customer":
-                            hook_context.set_customer_verified(tool_result["customer_id"])
-                        elif block.name == "lookup_order":
-                            hook_context.set_order_verified(tool_result["order_id"])
-                    
-                    log_event(logger, "tool_result",
-                        tool_name=block.name,
-                        success=tool_result.get("success", False)
-                    )
-                    
-                    # Collect result
-                    tool_results.append({
-                        "type": "tool_result",
-                        "tool_use_id": block.id,
-                        "content": str(tool_result)
-                    })
-            
-            # Add tool results to messages
-            messages.append({"role": "user", "content": tool_results})
-        
-        else:
-            # Unexpected stop_reason
-            log_event(logger, "unexpected_stop_reason",
-                stop_reason=response.stop_reason
+ 
+class AgentSession:
+    """
+    A persistent customer support session.
+ 
+    Holds state across multiple customer messages:
+    - messages: full conversation history sent to Claude each turn
+    - hook_context: tracks what has been verified (customer, order)
+      so hooks don't reset between turns
+ 
+    Usage:
+        session = AgentSession()
+        session.send("I want a refund")
+        session.send("My email is john@example.com")
+        session.send("Order #10001")
+    """
+ 
+    def __init__(self):
+        self.client = anthropic.Anthropic(api_key=config.anthropic_api_key)
+        self.messages = []
+        self.hook_context = HookContext()   # persists for the whole session
+        self.turn = 0
+ 
+        log_event(logger, "session_started")
+ 
+    def send(self, customer_message: str) -> str:
+        """
+        Send a customer message and run the agentic loop until Claude responds.
+ 
+        The loop:
+        1. Append customer message to history
+        2. Call Claude with full history
+        3. If stop_reason == tool_use → execute tools, append results, loop
+        4. If stop_reason == end_turn → return Claude's response
+        """
+        self.turn += 1
+        log_event(logger, "turn_started", turn=self.turn, message_preview=customer_message[:50])
+ 
+        # Append customer message to persistent history
+        self.messages.append({"role": "user", "content": customer_message})
+ 
+        # Start tracing this turn
+        run = start_run(
+            run_id=f"customer-support-turn-{self.turn}",
+            project="p1_customer_support"
+        )
+ 
+        iteration = 0
+        max_iterations = 10
+ 
+        while iteration < max_iterations:
+            iteration += 1
+            log_event(logger, "agent_iteration", turn=self.turn, iteration=iteration)
+ 
+            # Call Claude with full conversation history
+            tool = run.start_tool("claude_api_call")
+ 
+            response = with_retry(
+                func=lambda: self.client.messages.create(
+                    model=config.dev_model,
+                    max_tokens=1024,
+                    system=add_cache_control(SYSTEM_PROMPT),
+                    tools=TOOLS,
+                    messages=add_cache_control_to_messages(self.messages, cache_last_n=1)
+                ),
+                operation_name="agent_api_call"
             )
-            break
-    
-    # Max iterations reached
-    log_event(logger, "agent_max_iterations",
-        max_iterations=max_iterations
-    )
-    
-    run.finish()
-    return "I'm having trouble processing your request. Connecting you with a human agent."
-
-
+ 
+            run.end_tool(tool,
+                input_tokens=response.usage.input_tokens,
+                output_tokens=response.usage.output_tokens
+            )
+ 
+            log_event(logger, "claude_response",
+                stop_reason=response.stop_reason,
+                turn=self.turn,
+                iteration=iteration
+            )
+ 
+            # Check stop_reason — this drives the loop, not Claude's words
+            if response.stop_reason == "end_turn":
+                # Claude is done — extract response text
+                assistant_message = ""
+                for block in response.content:
+                    if hasattr(block, "text"):
+                        assistant_message += block.text
+ 
+                # Append to history so future turns have full context
+                self.messages.append({"role": "assistant", "content": assistant_message})
+ 
+                log_event(logger, "turn_complete",
+                    turn=self.turn,
+                    iterations=iteration,
+                    final_message_preview=assistant_message[:50]
+                )
+ 
+                run.finish()
+                return assistant_message
+ 
+            elif response.stop_reason == "tool_use":
+                # Claude wants to call tools — build assistant content block
+                assistant_content = []
+                for block in response.content:
+                    if hasattr(block, "text"):
+                        assistant_content.append({"type": "text", "text": block.text})
+                    elif block.type == "tool_use":
+                        assistant_content.append(block)
+ 
+                self.messages.append({"role": "assistant", "content": assistant_content})
+ 
+                # Execute each tool Claude requested
+                tool_results = []
+                for block in response.content:
+                    if block.type == "tool_use":
+                        log_event(logger, "tool_execution",
+                            tool_name=block.name,
+                            turn=self.turn,
+                            iteration=iteration
+                        )
+ 
+                        # Check PreToolUse hooks
+                        hook_error = None
+ 
+                        if block.name == "lookup_order":
+                            hook_error = hook_pre_lookup_order(block.input, self.hook_context)
+ 
+                        elif block.name == "process_refund":
+                            hook_error = hook_pre_process_refund(block.input, self.hook_context)
+ 
+                        if hook_error:
+                            # Hook blocked — return error to Claude so it can self-correct
+                            log_event(logger, "hook_blocked_tool_call",
+                                tool_name=block.name,
+                                reason=hook_error.get("description")
+                            )
+                            tool_results.append({
+                                "type": "tool_result",
+                                "tool_use_id": block.id,
+                                "content": str(hook_error),
+                                "is_error": True
+                            })
+                            continue
+ 
+                        # Execute the tool
+                        tool_result = handle_tool_call(block.name, block.input)
+ 
+                        # Check PostToolUse hooks
+                        if block.name == "process_refund":
+                            tool_result = hook_post_process_refund(
+                                tool_result, block.input, self.hook_context
+                            )
+ 
+                        # Update hook context on success
+                        if tool_result.get("success"):
+                            if block.name == "get_customer":
+                                self.hook_context.set_customer_verified(tool_result["customer_id"])
+                            elif block.name == "lookup_order":
+                                self.hook_context.set_order_verified(tool_result["order_id"])
+ 
+                        log_event(logger, "tool_result",
+                            tool_name=block.name,
+                            success=tool_result.get("success", False)
+                        )
+ 
+                        tool_results.append({
+                            "type": "tool_result",
+                            "tool_use_id": block.id,
+                            "content": str(tool_result)
+                        })
+ 
+                # Append tool results to history
+                self.messages.append({"role": "user", "content": tool_results})
+ 
+            else:
+                log_event(logger, "unexpected_stop_reason",
+                    stop_reason=response.stop_reason
+                )
+                break
+ 
+        # Max iterations reached — escalate
+        log_event(logger, "agent_max_iterations", max_iterations=max_iterations)
+        run.finish()
+        return "I'm having trouble processing your request. Connecting you with a human agent."
+ 
+ 
 if __name__ == "__main__":
-    # Test the agent with a sample customer message
-    customer_message = "Hi, I want to get a refund for my order. My email is john.smith@email.com and the order number is #10001."
-    
-    run_agent(customer_message)
+    session = AgentSession()
+    print("AcmeCorp Customer Support")
+    print("Type 'quit' to exit\n")
+ 
+    while True:
+        user_input = input("You: ").strip()
+        if not user_input:
+            continue
+        if user_input.lower() == "quit":
+            print("Session ended.")
+            break
+ 
+        response = session.send(user_input)
+        print(f"\nAgent: {response}\n")

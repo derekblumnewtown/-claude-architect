@@ -19,10 +19,10 @@ class JSONFormatter(logging.Formatter):
 
     def format(self, record: logging.LogRecord) -> str:
         log_data = {
-            "timestamp": datetime.now(timezone.utc).isoformat(),
-            "level": record.levelname,
-            "logger": record.name,
-            "message": record.getMessage(),
+            "timestamp": datetime.now(timezone.utc).strftime("%m/%d %H:%M:%S"),
+            "level": record.levelname.ljust(8), 
+            "logger": record.name.ljust(25), 
+            "message": record.getMessage().ljust(30),
             "module": record.module,
         }
         if hasattr(record, "extra"):

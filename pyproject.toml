@@ -27,3 +27,4 @@ include = ["agent_platform*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
