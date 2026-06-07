@@ -1,4 +1,23 @@
+if 1==2:
+    import sqlite3
+
+    conn = sqlite3.connect('projects/p1_customer_support/data/support.db')
+    conn.execute("UPDATE orders SET already_refunded=0 WHERE order_number='#10003'")
+    conn.execute("DELETE FROM escalations")
+    conn.commit()
+    conn.close()
+    print('reset')
+    exit()
 if 1==1:
+    import sqlite3
+    conn = sqlite3.connect('projects/p1_customer_support/data/support.db')
+    conn.row_factory = sqlite3.Row
+    r = conn.execute('SELECT * FROM escalations ORDER BY created_at DESC LIMIT 1').fetchone()
+    if r is not None:
+        print(dict(r)['conversation_summary'])
+    conn.close()
+
+if 1==2:
     from projects.p1_customer_support.src.tools import handle_tool_call
     print('tools imported successfully')
 

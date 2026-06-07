@@ -53,6 +53,7 @@ def get_customer(email: str) -> dict:
                 "requires_escalation": True
             }
         
+        
         log_event(logger, "get_customer_success", customer_id=row["customer_id"])
         
         return {
@@ -193,11 +194,22 @@ def process_refund(customer_id: str, order_id: str, refund_amount: float, reason
 
 
 def escalate_to_human(reason: str, conversation_summary: str, recommended_action: str,
-                     customer_id: str = None, order_id: str = None) -> dict:
+                     customer_id: str = None, order_id: str = None,
+                     handoff_context: dict = None) -> dict:
     """
     Escalate the case to a human agent.
     """
-    log_event(logger, "escalate_to_human_called", reason=reason)
+    log_event(logger, "escalate_to_human_called", reason=reason, has_handoff_context=handoff_context is not None)
+
+    # Append structured handoff facts to the summary so nothing is lost
+    full_summary = conversation_summary
+    if handoff_context:
+        import json
+        full_summary = (
+            conversation_summary
+            + "\n\n[SYSTEM HANDOFF CONTEXT]\n"
+            + json.dumps(handoff_context, indent=2)
+        )
     
     conn = get_connection()
     
@@ -209,15 +221,15 @@ def escalate_to_human(reason: str, conversation_summary: str, recommended_action
             (escalation_id, customer_id, order_id, reason,
              conversation_summary, recommended_action, status, created_at)
             VALUES (?, ?, ?, ?, ?, ?, 'open', ?)""",
-            (escalation_id, customer_id, order_id, reason,
-             conversation_summary, recommended_action,
+            (escalation_id,
+             handoff_context.get("customer_id") if handoff_context else customer_id,
+             handoff_context.get("order_id") if handoff_context else order_id,
+             reason, full_summary, recommended_action,
              datetime.now().isoformat())
         )
         
         conn.commit()
-        
         log_event(logger, "escalation_created", escalation_id=escalation_id)
-        
         return {
             "success": True,
             "escalation_id": escalation_id,
@@ -227,11 +239,12 @@ def escalate_to_human(reason: str, conversation_summary: str, recommended_action
     finally:
         conn.close()
 
-
-def handle_tool_call(tool_name: str, tool_input: dict) -> dict:
+def handle_tool_call(tool_name: str, tool_input: dict,
+                     handoff_context: dict = None) -> dict:
     """
     Route tool calls from Claude to the correct function.
     """
+
     log_event(logger, "tool_call_routing", tool_name=tool_name)
     
     if tool_name == "get_customer":
@@ -256,9 +269,9 @@ def handle_tool_call(tool_name: str, tool_input: dict) -> dict:
             reason=tool_input["reason"],
             conversation_summary=tool_input["conversation_summary"],
             recommended_action=tool_input["recommended_action"],
-            customer_id=tool_input.get("customer_id"),
-            order_id=tool_input.get("order_id"),
+            handoff_context=handoff_context,
         )
+    
     
     else:
         return {
@@ -266,3 +279,4 @@ def handle_tool_call(tool_name: str, tool_input: dict) -> dict:
             "errorCategory": "validation",
             "description": f"Unknown tool: {tool_name}"
         }
+    

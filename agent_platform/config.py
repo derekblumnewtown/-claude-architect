@@ -18,6 +18,8 @@ class Config:
     dev_model: str
     log_level: str
     environment: str
+    context_window_limit: int
+    context_summarize_threshold: float
 
     @classmethod
     def from_env(cls) -> "Config":
@@ -37,6 +39,8 @@ class Config:
             ),
             log_level=os.getenv("LOG_LEVEL", "INFO"),
             environment=os.getenv("ENVIRONMENT", "development"),
+            context_window_limit = int(os.getenv("CONTEXT_WINDOW_LIMIT", "200000")),
+            context_summarize_threshold = float(os.getenv("CONTEXT_SUMMARIZE_THRESHOLD", "0.75")),
         )
 
 

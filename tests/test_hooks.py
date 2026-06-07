@@ -16,7 +16,7 @@ def test_lookup_order_blocked_when_customer_not_verified():
     result = hook_pre_lookup_order({"customer_id": "C001", "order_number": "#10001"}, context)
     assert result is not None
     assert result["success"] is False
-    assert result["errorCategory"] == "permission"
+    assert result["block_reason"] == "customer_not_verified"
 
 
 def test_lookup_order_allowed_when_customer_verified():

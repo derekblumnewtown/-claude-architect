@@ -51,15 +51,13 @@ def hook_pre_lookup_order(tool_input: dict, context: HookContext) -> dict:
     Hook 2 — PreToolUse on lookup_order
     Block unless customer_id is verified AND has been passed correctly.
     """
-    log_event(logger, "hook_pre_lookup_order",
-        customer_verified=context.is_customer_verified()
-    )
+    log_event(logger, "hook_pre_lookup_order", customer_verified=context.is_customer_verified())
     
-    # Check: is customer verified in our context?
+    # Customer must be verified to look up orders
     if not context.is_customer_verified():
         error = {
             "success": False,
-            "errorCategory": "permission",
+            "block_reason": "customer_not_verified",
             "isRetryable": False,
             "description": "Must verify customer identity first. Call get_customer first and wait for the result."
         }
@@ -71,7 +69,7 @@ def hook_pre_lookup_order(tool_input: dict, context: HookContext) -> dict:
     if passed_customer_id != context.verified_customer_id:
         error = {
             "success": False,
-            "errorCategory": "permission",
+            "block_reason": "customer_id_mismatch",
             "isRetryable": False,
             "description": f"Customer ID mismatch. You verified {context.verified_customer_id} but passed {passed_customer_id}. Use the verified customer ID."
         }
@@ -96,73 +94,48 @@ def hook_pre_process_refund(tool_input: dict, context: HookContext) -> dict:
         None if allowed
         Error dict if blocked
     """
-    log_event(logger, "hook_pre_process_refund",
-        customer_verified=context.is_customer_verified(),
-        order_verified=context.is_order_verified()
-    )
+    log_event(logger, "hook_pre_process_refund", customer_verified=context.is_customer_verified(), order_verified=context.is_order_verified())
     
-    # Check: is customer verified?
     if not context.is_customer_verified():
-        error = {
-            "success": False,
-            "errorCategory": "permission",
-            "isRetryable": False,
+
+        #error = Customer has not been verified
+        error = {"success": False, "block_reason": "customer_not_verified", "isRetryable": False,
             "description": "Must verify customer identity first before processing refunds"
         }
         log_event(logger, "hook_process_refund_blocked", reason="customer_not_verified")
         return error
     
-    # Check: is order verified?
     if not context.is_order_verified():
-        error = {
-            "success": False,
-            "errorCategory": "permission",
-            "isRetryable": False,
-            "description": "Must verify order first before processing refunds"
-        }
+
+        #error = Order has not been verified
+        error = {"success": False, "block_reason": "order_not_verified", "isRetryable": False,
+                 "description": "Must verify order first before processing refunds"}
         log_event(logger, "hook_process_refund_blocked", reason="order_not_verified")
         return error
-    
-    # Allow the call
+
+    refund_amount = tool_input.get("refund_amount", 0)
+    if refund_amount > 500:
+
+        # Block refunds over $500 — requires manager approval
+        error = {"success": False, "block_reason": "amount_over_threshold","isRetryable": False, "requires_escalation": True,
+                  "description": f"Refund of ${refund_amount} exceeds $500 — requires manager approval"}
+        log_event(logger, "hook_process_refund_blocked", reason="amount_over_threshold", refund_amount=refund_amount)
+        return error 
+
+    # Success
     return None
+
 
 
 def hook_post_process_refund(tool_result: dict, tool_input: dict, context: HookContext) -> dict:
     """
     Hook 1 — PostToolUse on process_refund
-    
-    Block refunds over $500 and redirect to escalation.
-    
-    Args:
-        tool_result: What process_refund returned
-        tool_input: The arguments Claude passed to process_refund
-        context: HookContext tracking verified data
-        
-    Returns:
-        Modified tool_result or escalation redirect
+
+    Logs the successful refund. The $500 threshold check moved to
+    hook_pre_process_refund so refunds over $500 never reach this point.
     """
     refund_amount = tool_input.get("refund_amount", 0)
-    
-    log_event(logger, "hook_post_process_refund",
-        refund_amount=refund_amount,
-        over_threshold=refund_amount > 500
-    )
-    
-    # Check: is refund over $500?
-    if refund_amount > 500:
-        log_event(logger, "hook_process_refund_blocked",
-            reason="amount_over_500",
-            refund_amount=refund_amount
-        )
-        
-        # Block the refund and redirect to escalation
-        return {
-            "success": False,
-            "blocked_by_hook": True,
-            "reason": "Refunds over $500 require manager approval",
-            "requires_escalation": True,
-            "escalation_reason": f"Refund of ${refund_amount} exceeds $500 threshold"
-        }
-    
-    # Allow the refund
+    log_event(logger, "hook_post_process_refund", 
+              refund_amount=refund_amount,
+              confirmation_number=tool_result.get("confirmation_number"))
     return tool_result
