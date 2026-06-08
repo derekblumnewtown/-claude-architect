@@ -21,49 +21,27 @@ def get_customer(email: str) -> dict:
     log_event(logger, "get_customer_called", email=email)
     
     if "@" not in email or "." not in email:
-        return {
-            "success": False,
-            "errorCategory": "validation",
-            "isRetryable": True,
-            "description": f"Invalid email format: {email}"
-        }
+        return {"success": False, "errorCategory": "validation", "isRetryable": True, "description": f"Invalid email format: {email}"}
     
     conn = get_connection()
-    
     try:
-        row = conn.execute(
-            "SELECT * FROM customers WHERE email = ?",
-            (email.lower().strip(),)
-        ).fetchone()
+
+        row = conn.execute("SELECT * FROM customers WHERE email = ?", (email.lower().strip(),)).fetchone()
         
+        # The email does not exist
         if not row:
-            return {
-                "success": False,
-                "errorCategory": "validation",
-                "isRetryable": True,
-                "description": f"No account found for {email}"
-            }
+            return {"success": False,"errorCategory": "validation", "isRetryable": True,
+                    "description": f"No account found for {email}"}
         
+        # The Account has been suspended
         if row["account_status"] == "suspended":
-            return {
-                "success": False,
-                "errorCategory": "permission",
-                "isRetryable": False,
-                "description": "Account is suspended",
-                "requires_escalation": True
-            }
+            return {"success": False, "errorCategory": "permission", "isRetryable": False,
+                    "description": "Account is suspended", "requires_escalation": True }
         
-        
+        # Found the email
         log_event(logger, "get_customer_success", customer_id=row["customer_id"])
-        
-        return {
-            "success": True,
-            "customer_id": row["customer_id"],
-            "full_name": row["full_name"],
-            "email": row["email"],
-            "account_status": row["account_status"],
-            "customer_tier": row["customer_tier"],
-        }
+        return {"success": True, "customer_id": row["customer_id"], "full_name": row["full_name"],
+                "email": row["email"], "account_status": row["account_status"], "customer_tier": row["customer_tier"],}
         
     finally:
         conn.close()
@@ -79,42 +57,24 @@ def lookup_order(customer_id: str, order_number: str) -> dict:
     
     try:
         row = conn.execute(
-            "SELECT * FROM orders WHERE order_number = ?",
-            (order_number.strip(),)
-        ).fetchone()
+            "SELECT * FROM orders WHERE order_number = ?", (order_number.strip(),)).fetchone()
         
         if not row:
-            return {
-                "success": False,
-                "errorCategory": "validation",
-                "isRetryable": True,
-                "description": f"Order {order_number} not found"
-            }
+            return {"success": False,"errorCategory": "validation","isRetryable": True,
+                    "description": f"Order {order_number} not found"}
         
         if row["customer_id"] != customer_id:
-            return {
-                "success": False,
-                "errorCategory": "permission",
-                "isRetryable": False,
-                "description": "Order does not belong to this account",
-                "requires_escalation": True
-            }
+            return {"success": False,"errorCategory": "permission", "isRetryable": False,
+                    "description": "Order does not belong to this account",
+                    "requires_escalation": True}
         
         items = json.loads(row["items"])
         
         log_event(logger, "lookup_order_success", order_id=row["order_id"])
         
-        return {
-            "success": True,
-            "order_id": row["order_id"],
-            "order_number": row["order_number"],
-            "items": items,
-            "order_date": row["order_date"],
-            "delivery_date": row["delivery_date"],
-            "order_status": row["order_status"],
-            "total_amount": row["total_amount"],
-            "already_refunded": bool(row["already_refunded"]),
-        }
+        return {"success": True, "order_id": row["order_id"], "order_number": row["order_number"], "items": items, "order_date": row["order_date"],
+                "delivery_date": row["delivery_date"], "order_status": row["order_status"], "total_amount": row["total_amount"], 
+                "already_refunded": bool(row["already_refunded"]),}
         
     finally:
         conn.close()
@@ -130,64 +90,39 @@ def process_refund(customer_id: str, order_id: str, refund_amount: float, reason
     conn = get_connection()
     
     try:
-        order = conn.execute(
-            "SELECT * FROM orders WHERE order_id = ? AND customer_id = ?",
-            (order_id, customer_id)
-        ).fetchone()
+        order = conn.execute("SELECT * FROM orders WHERE order_id = ? AND customer_id = ?",
+                             (order_id, customer_id)).fetchone()
         
         if not order:
-            return {
-                "success": False,
-                "errorCategory": "validation",
-                "isRetryable": False,
-                "description": "Order not found",
-                "requires_escalation": True
+            return {"success": False, "errorCategory": "validation", "isRetryable": False,
+                    "description": "Order not found",
+                    "requires_escalation": True
             }
         
         if order["already_refunded"]:
-            return {
-                "success": False,
-                "errorCategory": "validation",
-                "isRetryable": False,
-                "description": f"Order {order['order_number']} already refunded"
-            }
+            return {"success": False, "errorCategory": "validation", "isRetryable": False,
+                    "description": f"Order {order['order_number']} already refunded"}
         
         if order["order_status"] != "delivered":
-            return {
-                "success": False,
-                "errorCategory": "validation",
-                "isRetryable": False,
-                "description": f"Order status is {order['order_status']}, not eligible"
-            }
+            return {"success": False, "errorCategory": "validation", "isRetryable": False,
+                    "description": f"Order status is {order['order_status']}, not eligible"}
         
         confirmation_number = f"REF-{uuid.uuid4().hex[:8].upper()}"
         refund_id = f"RFD-{uuid.uuid4().hex[:8].upper()}"
         
-        conn.execute(
-            """INSERT INTO refunds
-            (refund_id, order_id, customer_id, refund_amount, reason,
-             status, confirmation_number, created_at)
-            VALUES (?, ?, ?, ?, ?, 'approved', ?, ?)""",
-            (refund_id, order_id, customer_id, refund_amount, reason,
-             confirmation_number, datetime.now().isoformat())
-        )
+        conn.execute("""INSERT INTO refunds
+                       (refund_id, order_id, customer_id, refund_amount, reason, status, confirmation_number, created_at)
+                       VALUES (?, ?, ?, ?, ?, 'approved', ?, ?)""",
+                      (refund_id, order_id, customer_id, refund_amount, reason, confirmation_number, datetime.now().isoformat()))
         
-        conn.execute(
-            "UPDATE orders SET already_refunded = 1 WHERE order_id = ?",
-            (order_id,)
-        )
+        conn.execute("UPDATE orders SET already_refunded = 1 WHERE order_id = ?", (order_id,))
         
         conn.commit()
         
         log_event(logger, "process_refund_success", confirmation_number=confirmation_number)
         
-        return {
-            "success": True,
-            "refund_id": refund_id,
-            "confirmation_number": confirmation_number,
-            "refund_amount": refund_amount,
-            "timeline": "3-5 business days",
-        }
+        return {"success": True, "refund_id": refund_id, "confirmation_number": confirmation_number, "refund_amount": refund_amount, 
+                "timeline": "3-5 business days",}
         
     finally:
         conn.close()

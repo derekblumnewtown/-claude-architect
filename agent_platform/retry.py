@@ -59,18 +59,11 @@ class RetryConfig:
     - Wait longer between each attempt
     - Add randomness to prevent all retries hitting at once
     """
-    # Maximum number of attempts including the first try
-    max_attempts: int = 3
-
-    # How long to wait after the first failure (seconds)
-    base_delay: float = 1.0
-
-    # Multiply delay by this after each failure
-    # 1.0 = wait 1s, 2.0 = wait 2s, 4.0 = wait 4s
-    backoff_multiplier: float = 2.0
-
-    # Maximum wait time between retries (seconds)
-    max_delay: float = 30.0
+   
+    max_attempts: int = 3              # Maximum number of attempts including the first try
+    base_delay: float = 1.0           # How long to wait after the first failure (seconds)
+    backoff_multiplier: float = 2.0   # Multiply delay by this after each failure, 1.0/wait 1s, 2.0 / wait 2s, 4.0 /wait 4s
+    max_delay: float = 30.0           # Maximum wait time between retries (seconds)
 
     # Add random jitter to prevent thundering herd
     # All retries hitting the API at exactly the same time
@@ -120,28 +113,23 @@ def classify_error(error: Exception) -> ErrorCategory:
     error_type = type(error).__name__
     error_message = str(error).lower()
 
-    # Import here to avoid circular imports
-    # These are Anthropic SDK specific error types
+    # Import here to avoid circular imports - These are Anthropic SDK specific error types
     try:
         import anthropic
         
-        # Rate limit — we sent too many requests too fast
-        # Wait and retry
+        # Rate limit — we sent too many requests too fast - Wait and retry
         if isinstance(error, anthropic.RateLimitError):
             return ErrorCategory.TRANSIENT
 
-        # Server error — Anthropic's servers had a problem
-        # Not our fault, retry
+        # Server error — Anthropic's servers had a problem - Not our fault, retry
         if isinstance(error, anthropic.InternalServerError):
             return ErrorCategory.TRANSIENT
 
-        # Bad request — something wrong with our parameters
-        # Retrying won't help — we need to fix the request
+        # Bad request — something wrong with our parameters - Retrying won't help — we need to fix the request
         if isinstance(error, anthropic.BadRequestError):
             return ErrorCategory.VALIDATION
 
-        # Authentication error — wrong API key
-        # Retrying won't help — we need to fix the key
+        # Authentication error — wrong API key - Retrying won't help — we need to fix the key
         if isinstance(error, anthropic.AuthenticationError):
             return ErrorCategory.PERMISSION
 
@@ -154,35 +142,23 @@ def classify_error(error: Exception) -> ErrorCategory:
         pass
 
     # Validation errors — bad request, invalid parameters
-    if any(keyword in error_message for keyword in [
-        "invalid_request", "bad_request", "invalid parameter",
-        "bad parameter", "validation", "invalid model"
-    ]):
+    if any(keyword in error_message for keyword in ["invalid_request", "bad_request", "invalid parameter", "bad parameter", "validation", "invalid model"]):
         return ErrorCategory.VALIDATION
 
     # Permission errors — authentication or access denied
-    if any(keyword in error_message for keyword in [
-        "authentication", "unauthorized", "permission denied",
-        "forbidden", "invalid key", "api_key"
-    ]):
+    if any(keyword in error_message for keyword in ["authentication", "unauthorized", "permission denied", "forbidden", "invalid key", "api_key"]):
         return ErrorCategory.PERMISSION
 
     # Network errors — connection problems, timeouts
     # These are always transient — retry
-    if any(keyword in error_message for keyword in [
-        "timeout", "connection", "network",
-        "temporary", "unavailable", "503", "502"
-    ]):
+    if any(keyword in error_message for keyword in ["timeout", "connection", "network","temporary", "unavailable", "503", "502"]):
         return ErrorCategory.TRANSIENT
 
     # Unknown errors — assume transient to be safe
     return ErrorCategory.TRANSIENT
 
 
-def calculate_delay(
-    attempt: int,
-    config: RetryConfig,
-) -> float:
+def calculate_delay(attempt: int, config: RetryConfig,) -> float:
     """
     Calculates how long to wait before the next retry.
     Uses exponential backoff — waits longer after each failure.
@@ -199,26 +175,20 @@ def calculate_delay(
         Attempt 2 fails → wait 2.0s
         Attempt 3 fails → wait 4.0s (capped at max_delay)
     """
-    # Exponential backoff formula:
-    # delay = base_delay * (backoff_multiplier ^ (attempt - 1))
+    # Exponential backoff formula: delay = base_delay * (backoff_multiplier ^ (attempt - 1))
     delay = config.base_delay * (config.backoff_multiplier ** (attempt - 1))
 
     # Never wait longer than max_delay
     delay = min(delay, config.max_delay)
 
-    # Add jitter — random amount between 0 and 1 second
-    # Prevents all retries hitting the API at exactly the same time
+    # Add jitter — random amount between 0 and 1 second / Prevents all retries hitting the API at exactly the same time
     if config.jitter:
         delay += random.uniform(0, 1.0)
 
     return delay
 
 
-def with_retry(
-    func: Callable[[], Any],
-    config: Optional[RetryConfig] = None,
-    operation_name: str = "api_call",
-) -> Any:
+def with_retry(func: Callable[[], Any], config: Optional[RetryConfig] = None, operation_name: str = "api_call",) -> Any:
     """
     Wraps any function call with automatic retry logic.
     
@@ -255,6 +225,7 @@ def with_retry(
             operation_name="process_refund"
         )
     """
+
     # Use default config if none provided
     if config is None:
         config = RetryConfig()
@@ -267,24 +238,13 @@ def with_retry(
         attempt += 1
 
         try:
-            log_event(
-                logger,
-                "retry_attempt",
-                operation=operation_name,
-                attempt=attempt,
-                max_attempts=config.max_attempts,
-            )
+            log_event(logger, "retry_attempt", operation=operation_name, attempt=attempt, max_attempts=config.max_attempts,)
 
             # Try the API call — if it works, return immediately
             result = func()
 
             # Success — log it and return the result
-            log_event(
-                logger,
-                "retry_success",
-                operation=operation_name,
-                attempt=attempt,
-            )
+            log_event(logger, "retry_success", operation=operation_name, attempt=attempt,)
 
             return result
 
@@ -293,49 +253,26 @@ def with_retry(
             # Classify the error to decide what to do
             category = classify_error(error)
 
-            log_event(
-                logger,
-                "retry_error",
-                operation=operation_name,
-                attempt=attempt,
-                error_category=category.value,
-                error_type=type(error).__name__,
-                error_message=str(error)[:200],
-            )
+            log_event(logger, "retry_error", operation=operation_name, attempt=attempt, error_category=category.value,
+                      error_type=type(error).__name__, error_message=str(error)[:200],)
 
-            # VALIDATION and PERMISSION errors — give up immediately
-            # Retrying won't help — the request itself is wrong
+            # VALIDATION and PERMISSION errors — give up immediately - Retrying won't help — the request itself is wrong
             if category != ErrorCategory.TRANSIENT:
-                raise RetryError(
-                    error_category=category,
-                    is_retryable=False,
-                    description=f"{category.value} error on {operation_name}: {str(error)[:200]}",
-                    original_error=error,
-                    attempts_made=attempt,
-                )
+                raise RetryError( error_category=category, is_retryable=False,
+                                  description=f"{category.value} error on {operation_name}: {str(error)[:200]}",
+                                  original_error=error, attempts_made=attempt,)
 
             # TRANSIENT error — check if we have attempts left
             if attempt >= config.max_attempts:
                 # Ran out of attempts — give up
-                raise RetryError(
-                    error_category=ErrorCategory.TRANSIENT,
-                    is_retryable=True,
-                    description=f"All {config.max_attempts} attempts failed for {operation_name}",
-                    original_error=error,
-                    attempts_made=attempt,
-                )
+                raise RetryError(error_category=ErrorCategory.TRANSIENT, is_retryable=True,
+                                 description=f"All {config.max_attempts} attempts failed for {operation_name}",
+                                 original_error=error, attempts_made=attempt,)
 
             # Calculate how long to wait before next attempt
             delay = calculate_delay(attempt, config)
 
-            log_event(
-                logger,
-                "retry_waiting",
-                operation=operation_name,
-                attempt=attempt,
-                waiting_seconds=round(delay, 2),
-                next_attempt=attempt + 1,
-            )
+            log_event(logger, "retry_waiting", operation=operation_name, attempt=attempt, waiting_seconds=round(delay, 2), next_attempt=attempt + 1,)
 
             # Wait before trying again
             time.sleep(delay)

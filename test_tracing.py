@@ -1,4 +1,41 @@
-if 1==2:
+if 1==1:
+    import sqlite3
+    conn = sqlite3.connect('projects/p1_customer_support/data/support.db')
+    conn.row_factory = sqlite3.Row
+    r = conn.execute("SELECT customer_id, email, full_name FROM customers WHERE customer_id='CUST-005'").fetchone()
+    print(dict(r))
+    conn.close()
+    exit()
+if 1==1:
+    import sqlite3
+    conn = sqlite3.connect('projects/p1_customer_support/data/support.db')
+    conn.row_factory = sqlite3.Row
+    r = conn.execute("SELECT customer_id, order_number, order_status FROM orders WHERE order_number='#10007'").fetchone()
+    print(dict(r))
+    conn.close()
+    exit()
+if 1==1:
+    import sqlite3
+    conn = sqlite3.connect('projects/p1_customer_support/data/support.db')
+    conn.row_factory = sqlite3.Row
+    r = conn.execute("SELECT customer_id, order_number, already_refunded FROM orders WHERE order_number='#10004'").fetchone()
+    print(dict(r))
+    conn.close()
+    exit()
+if 1==1:
+    from agent_platform.config import Config
+    import os
+    os.environ['ANTHROPIC_API_KEY'] = 'test-key'
+    c1 = Config(anthropic_api_key='test', dev_model='claude-haiku-4-5', default_model='claude-haiku-4-5', log_level='DEBUG', environment='development', context_window_limit=200000, context_summarize_threshold=0.75)
+    c2 = Config(anthropic_api_key='test', dev_model='claude-haiku-4-5', default_model='claude-haiku-4-5', log_level='DEBUG', environment='development', context_window_limit=200000, context_summarize_threshold=0.75)
+    print(c1 == c2)
+    exit()
+    
+if 1==1:
+    from agent_platform.config import config
+    print(config)
+    exit()
+if 1==1:
     import sqlite3
 
     conn = sqlite3.connect('projects/p1_customer_support/data/support.db')

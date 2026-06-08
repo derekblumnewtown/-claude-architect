@@ -85,8 +85,7 @@ def add_cache_control_to_messages(messages: list[dict], cache_last_n: int = 1,) 
     # Don't modify the original list — work on a copy
     cached_messages = messages.copy()
 
-    # Find the last N messages and add cache_control
-    # max() prevents going below index 0 if cache_last_n
+    # Find the last N messages and add cache_control, max() prevents going below index 0 if cache_last_n
     # is larger than the number of messages
     start_index = max(0, len(cached_messages) - cache_last_n)
 
@@ -94,9 +93,9 @@ def add_cache_control_to_messages(messages: list[dict], cache_last_n: int = 1,) 
 
         message = cached_messages[i]
 
-        # Content can be a string or a list of blocks
-        # We need it to be a list to add cache_control
+        # Content can be a string or a list of blocks- We need it to be a list to add cache_control
         if isinstance(message["content"], str):
+
             # Convert string content to block format
             cached_messages[i] = {
                 **message,
@@ -109,8 +108,7 @@ def add_cache_control_to_messages(messages: list[dict], cache_last_n: int = 1,) 
                 ],
             }
         elif isinstance(message["content"], list):
-            # Content is already a list — add cache_control
-            # to the last block in the list
+            # Content is already a list — add cache_control to the last block in the list
             content_copy = message["content"].copy()
             if content_copy:
                 last_block = content_copy[-1].copy()
@@ -121,8 +119,6 @@ def add_cache_control_to_messages(messages: list[dict], cache_last_n: int = 1,) 
                     "content": content_copy,
                 }
 
-    log_event(logger,"messages_cache_control_added",
-        # Log how many messages got cache_control
-        messages_cached=cache_last_n, total_messages=len(cached_messages),)
+    log_event(logger,"messages_cache_control_added", messages_cached=cache_last_n, total_messages=len(cached_messages),)
 
     return cached_messages

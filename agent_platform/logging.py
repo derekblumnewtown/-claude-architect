@@ -4,8 +4,9 @@ Structured JSON logging for all agent runs.
 Every tool call, hook fire, and escalation gets logged here.
 """
 
-import json
+import json     #json.dumps() — converts a Python object to a JSON string, json.loads():converts a JSON string back to a Python object:
 import logging
+import os
 import sys
 from datetime import datetime, timezone
 from typing import Any
@@ -13,6 +14,8 @@ from typing import Any
 from dotenv import load_dotenv   
 load_dotenv()                    
 
+
+#so in logging.py we have get_log, log_event and JSONFormatter, and JSONFormatter is used by get_log to set up how we handle writing to the terminal
 
 class JSONFormatter(logging.Formatter):
     """Formats log records as single-line JSON."""
@@ -45,25 +48,34 @@ def get_logger(name: str, level: int = logging.INFO) -> logging.Logger:
 
     Usage: logger = get_logger(__name__)
     """
-    # Read log level from environment
-    # Defaults to INFO if LOG_LEVEL not set in .env
-    import os
+    # Read log level from environment - Defaults to INFO if LOG_LEVEL not set in .env
     log_level_str = os.getenv("LOG_LEVEL", "INFO").upper()
 
-    # Convert string "WARNING" to logging.WARNING (30)
-    # getattr looks up the attribute by name on the logging module
+    # Convert the string "WARNING" to logging.WARNING value from the python logging library
     log_level = getattr(logging, log_level_str, logging.INFO)
 
+    # Get the name of the logger that was sent in as a parameter
     logger = logging.getLogger(name)
+    
+    # Only add the handler if one does not exist
     if not logger.handlers:
+
+        # Creates a handler that writes to the terminal.
         handler = logging.StreamHandler(sys.stdout)
+
+        # When the handler receives a log record, it calls JSONFormatter.format() to turn it into a JSON string.
         handler.setFormatter(JSONFormatter())
+
+        #Attaches the handler to the logger.
         logger.addHandler(handler)
+        
+        # stops the log from bubbling up to parent loggers. Without this, logs might print twice
         logger.propagate = False
 
-    # Set level every time — not just on first creation
-    # This ensures .env changes take effect immediately
+    # Set level every time — not just on first creation - This ensures .env changes take effect immediately
     logger.setLevel(log_level)
+
+    #it returns a logging.logger instance that streams JSON to the terminal based on the level
     return logger
 
 

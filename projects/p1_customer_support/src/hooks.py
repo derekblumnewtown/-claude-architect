@@ -27,16 +27,18 @@ class HookContext:
     def __init__(self):
         self.verified_customer_id = None
         self.verified_order_id = None
+        self.verified_order_status = None
     
     def set_customer_verified(self, customer_id: str):
         """Record that a customer has been verified."""
         log_event(logger, "hook_customer_verified", customer_id=customer_id)
         self.verified_customer_id = customer_id
     
-    def set_order_verified(self, order_id: str):
+    def set_order_verified(self, order_id: str, order_status:str):
         """Record that an order has been verified."""
         log_event(logger, "hook_order_verified", order_id=order_id)
         self.verified_order_id = order_id
+        self.verified_order_status = order_status
     
     def is_customer_verified(self) -> bool:
         """Check if customer is verified."""
@@ -45,6 +47,15 @@ class HookContext:
     def is_order_verified(self) -> bool:
         """Check if order is verified."""
         return self.verified_order_id is not None
+
+    def is_order_delivered(self) -> bool:
+        """Check if order was delivered"""
+        return self.verified_order_status == "delivered"
+
+
+    def is_delivered(self) -> bool:
+        """Check if order has been delivered."""
+        return self.order_status is not None
 
 def hook_pre_lookup_order(tool_input: dict, context: HookContext) -> dict:
     """
@@ -55,30 +66,21 @@ def hook_pre_lookup_order(tool_input: dict, context: HookContext) -> dict:
     
     # Customer must be verified to look up orders
     if not context.is_customer_verified():
-        error = {
-            "success": False,
-            "block_reason": "customer_not_verified",
-            "isRetryable": False,
-            "description": "Must verify customer identity first. Call get_customer first and wait for the result."
-        }
+        error = {"success": False, "block_reason": "customer_not_verified", "isRetryable": False,
+                 "description": "Must verify customer identity first. Call get_customer first and wait for the result."}
         log_event(logger, "hook_lookup_order_blocked", reason="customer_not_verified")
         return error
     
     # Check: did Claude pass the correct verified customer_id?
     passed_customer_id = tool_input.get("customer_id")
     if passed_customer_id != context.verified_customer_id:
-        error = {
-            "success": False,
-            "block_reason": "customer_id_mismatch",
-            "isRetryable": False,
-            "description": f"Customer ID mismatch. You verified {context.verified_customer_id} but passed {passed_customer_id}. Use the verified customer ID."
-        }
+        error = {"success": False, "block_reason": "customer_id_mismatch", "isRetryable": False,
+                 "description": f"Customer ID mismatch. You verified {context.verified_customer_id} but passed {passed_customer_id}. Use the verified customer ID."}
         log_event(logger, "hook_lookup_order_blocked", reason="customer_id_mismatch")
         return error
     
     # Allow the call
     return None
-
 
 def hook_pre_process_refund(tool_input: dict, context: HookContext) -> dict:
     """
@@ -106,11 +108,15 @@ def hook_pre_process_refund(tool_input: dict, context: HookContext) -> dict:
         return error
     
     if not context.is_order_verified():
-
-        #error = Order has not been verified
         error = {"success": False, "block_reason": "order_not_verified", "isRetryable": False,
                  "description": "Must verify order first before processing refunds"}
         log_event(logger, "hook_process_refund_blocked", reason="order_not_verified")
+        return error
+
+    if not context.is_order_delivered():
+        error = {"success": False, "block_reason": "order_not_delivered", "isRetryable": False,
+                 "description": "Order has not yet been delivered and is not eligible for refund"}
+        log_event(logger, "hook_process_refund_blocked", reason="order_not_delivered")
         return error
 
     refund_amount = tool_input.get("refund_amount", 0)
@@ -125,8 +131,6 @@ def hook_pre_process_refund(tool_input: dict, context: HookContext) -> dict:
     # Success
     return None
 
-
-
 def hook_post_process_refund(tool_result: dict, tool_input: dict, context: HookContext) -> dict:
     """
     Hook 1 — PostToolUse on process_refund
@@ -134,8 +138,6 @@ def hook_post_process_refund(tool_result: dict, tool_input: dict, context: HookC
     Logs the successful refund. The $500 threshold check moved to
     hook_pre_process_refund so refunds over $500 never reach this point.
     """
-    refund_amount = tool_input.get("refund_amount", 0)
-    log_event(logger, "hook_post_process_refund", 
-              refund_amount=refund_amount,
-              confirmation_number=tool_result.get("confirmation_number"))
+    refund_amount = tool_input.get("refund_amount", 0) 
+    log_event(logger, "hook_post_process_refund", refund_amount=refund_amount, confirmation_number=tool_result.get("confirmation_number"))
     return tool_result

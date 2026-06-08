@@ -54,3 +54,18 @@ def test_refund_under_500_passes_result_through():
     original = {"success": True, "confirmation_number": "REF-123", "amount": 250.00}
     result = hook_post_process_refund(original, {"refund_amount": 250.00}, context)
     assert result is original   # not just equal — the same object, unmodified
+
+def test_process_refund_blocked_when_order_not_delivered():
+    context = HookContext()
+    context.set_customer_verified("CUST-001")
+    context.set_order_verified("ORD-007", "processing")  # not delivered
+    result = hook_pre_process_refund({"refund_amount": 25.00}, context)
+    assert result is not None
+    assert result["block_reason"] == "order_not_delivered"
+
+def test_process_refund_allowed_when_order_delivered():
+    context = HookContext()
+    context.set_customer_verified("CUST-001")
+    context.set_order_verified("ORD-001", "delivered")
+    result = hook_pre_process_refund({"refund_amount": 25.00}, context)
+    assert result is None  # allowed    

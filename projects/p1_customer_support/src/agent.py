@@ -239,7 +239,7 @@ class AgentSession:
                 run.finish()
                 return assistant_message
  
-            # Claude wants to call tools — build assistant content block
+            # Claude wants to call tools 
             elif response.stop_reason == "tool_use":
                 
                 assistant_content = []
@@ -257,10 +257,11 @@ class AgentSession:
 
                     if block.type == "tool_use":
             
-                        log_event(logger, "tool_execution", tool_name=block.name,turn=self.turn, iteration=iteration)
+                        log_event(logger, "tool_execution", tool_name=block.name, turn=self.turn, iteration=iteration)
                         hook_error = None
  
-                        # Pre Hooks - these run before the tool is executed, they can block the tool execution if prerequisites aren't met, or if something in # the tool input looks wrong. They return an error object with details if they want to block, or None if it's all good.
+                        # Pre Hooks - these run before the tool is executed, they can block the tool execution if prerequisites aren't met, 
+                        # or if something in # the tool input looks wrong. Return an error object with details if they want to block, or None if it's all good.
                         if block.name == "lookup_order":
                             hook_error = hook_pre_lookup_order(block.input, self.hook_context)
  
@@ -306,7 +307,7 @@ class AgentSession:
 
                             # The lookup_order was found to be successful, we can mark the order_id as verified in our context so that future tool calls that # # require order verification can check this.
                             elif block.name == "lookup_order":
-                                self.hook_context.set_order_verified(tool_result["order_id"])
+                                self.hook_context.set_order_verified(tool_result["order_id"], tool_result["order_status"])
                                 self.handoff_context.set_order(
                                     order_id=tool_result["order_id"],
                                     order_number=block.input.get("order_number", ""),
