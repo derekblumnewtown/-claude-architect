@@ -1,0 +1,3 @@
+tool_choice={"type": "auto"}    # Claude decides — default, what Project 1 used
+tool_choice={"type": "any"}     # Claude must call at least one tool
+tool_choice={"type": "tool", "name": "extract_invoice"}  # Claude MUST call this specific tool
