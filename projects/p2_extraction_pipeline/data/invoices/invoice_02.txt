@@ -1,0 +1,44 @@
+```
+INVOICE
+
+Bill To:
+Marcus Chen
+Apt 4B, 287 Riverside Drive
+Portland, OR 97204
+
+From:
+Cascade Landscaping & Design
+License #OR-2847-LS
+marcus@cascadeland.local
+
+Date: 11/08/2024
+Invoice #: CSC-2024-1847
+Due: Net 30
+
+---
+
+SERVICES PROVIDED
+
+Fall cleanup & leaf removal (8 hrs @ $65/hr)          $520.00
+Removal of dead maple tree - labor only              $385.00
+Disposal & hauling (2 truckloads)                    $280.00
+New mulch installation - 4 cubic yards               $156.00
+
+Subtotal                                            $1,341.00
+Tax (9.5%)                                           $127.40
+TOTAL DUE                                           $1,468.40
+
+---
+
+Notes:
+- Tree removal completed 11/07/2024
+- Materials (mulch) supplied by client
+- Invoice includes cleanup only
+- Final invoice - estimate balance $0
+
+Payment methods accepted:
+Venmo, Check, or Cash
+
+Contact: (503) 555-0847
+
+```

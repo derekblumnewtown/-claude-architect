@@ -1,0 +1,51 @@
+```
+INVOICE
+
+Bill To:
+Marcus Chen
+Chen & Associates Marketing
+Suite 405, Meridian Tower
+San Francisco, CA 94105
+
+From:
+Creative Pulse Studios
+www.creativepulse.studio
+contact@creativepulse.studio
+
+---
+
+PROJECT: Brand Identity Redesign - Phase 2
+
+Description of Work:
+Comprehensive brand strategy consultation including competitor analysis, 
+market positioning workshop, visual identity concepts (3 rounds of revisions), 
+brand guidelines documentation, and stakeholder presentation materials.
+
+Amount Due: $8,750.00
+
+---
+
+PAYMENT DETAILS:
+Invoice #: CP-2024-089
+Date: March 14, 2024
+Due Date: NET 30 (or upon project completion, whichever comes first)
+
+Bank Transfer:
+Creative Pulse Studios
+Account: 4721-89-XXXXX
+Routing: 121000248
+Bank: First Interstate Bank
+
+---
+
+NOTES:
+- Phase 2 delivery contingent on Phase 1 approval sign-off
+- Invoice reflects 10 billable hours at $875/hr (lead strategist rate)
+- Travel expenses for workshop facilitation ($650) included in total
+- Revisions beyond 3 rounds billed at $150/hour
+- Client contact for questions: Sarah Voss (sarah.voss@meridiantower.net)
+
+---
+
+Thank you for your business.
+```

@@ -1,0 +1,54 @@
+```
+INVOICE
+
+From: Riverside Landscaping & Design
+       142 Oak Ridge Drive
+       Portland, OR 97214
+       Phone: (503) 555-0847
+       License #: OR-LAND-4421
+
+Bill To: Morrison Family Trust
+         c/o Patricia Morrison
+         8847 Westbrook Avenue
+         Portland, OR 97215
+
+Invoice #: RS-2024-891
+Date: March 18, 2024
+Due: NET 30
+
+Description of Work:
+
+Spring cleanup and mulch installation - front beds
+  - Labor (8 hrs @ $65/hr): 520.00
+  - Mulch material (12 cubic yards): 384.00
+
+Removal of dead oak tree near property line
+  - Tree removal & stump grinding: 1,200.00
+  - Debris hauling: 180.00
+
+Partial fence repair (west side)
+  - Materials (pressure-treated boards, hardware): 247.50
+  - Labor (5.5 hrs @ $65/hr): 357.50
+
+Extra: Emergency callout for storm damage assessment (no charge - warranty inspection)
+
+                                          SUBTOTAL: $3,288.50
+                                          
+Note: Oregon business & operations tax (9%)
+      included in labor rates. Material tax
+      calculated separately: $75.43
+
+                                          TOTAL DUE: $3,363.93
+
+Payment Methods: Check, Venmo, or ACH transfer
+                (Ask Patricia for bank details)
+
+Notes: 
+- Some materials leftover - can be stored on-site or removed
+- Follow-up visit needed mid-April for fence stain/seal
+- Tree removal area will need erosion control - discuss next week?
+- Invoice covers work completed 3/10-3/18. Additional spring
+  work under separate estimate if needed.
+
+Thank you for your business!
+```

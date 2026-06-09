@@ -1,0 +1,63 @@
+# SENIOR GROWTH OPERATIONS STRATEGIST
+
+**Company:** Momentum Labs (Series B SaaS)
+**Location:** Remote (US-based preferred, willing to sponsor visa)
+**Job Type:** Full-Time, Hybrid (quarterly in-person retreats in Austin, TX)
+
+---
+
+## About Us
+
+Momentum Labs builds workflow automation software for mid-market professional services firms. We've grown 240% YoY and just closed our Series B. Our team is distributed across 12 countries, but we maintain a strong culture of async-first collaboration with intentional synchronous moments.
+
+## The Role
+
+You'll own the intersection of revenue operations, data analytics, and process optimization. This isn't a traditional ops role—you'll be part strategy consultant, part data scientist, part process engineer. Reporting to our VP of Revenue, you'll work cross-functionally with Sales, Customer Success, Finance, and Product to identify growth bottlenecks and implement systems-level solutions.
+
+**Key Responsibilities:**
+- Design and maintain dashboards that tell the story of our business (we use Looker, but open to other tools)
+- Conduct deep-dive analyses of sales cycle, conversion rates, and expansion revenue patterns
+- Build forecasting models and scenario planning frameworks
+- Implement or optimize our CRM/billing system stack (currently Salesforce + Zuora)
+- Run experiments and A/B tests on go-to-market approaches
+- Create playbooks and documentation that scale our processes without adding headcount
+
+## Requirements
+
+**Must Have:**
+- 5-7 years experience in revenue operations, business analytics, or growth strategy roles
+- SQL proficiency (comfortable writing moderately complex queries)
+- Experience with Salesforce OR similar CRM platforms
+- Strong statistical thinking (you understand p-values, confidence intervals, and how to avoid common data traps)
+- Excellent communication skills—you synthesize complex data into actionable insights for non-technical stakeholders
+
+**Nice to Have:**
+- Python or R for data analysis
+- Exposure to SaaS metrics and unit economics
+- Familiarity with tools like dbt, Amplitude, or Mixpanel
+- Experience with subscription billing models
+- Background in management consulting
+
+## Compensation & Benefits
+
+**Salary Range:** $145,000 - $185,000 (based on experience)
+**Equity:** 0.15% - 0.35% options pool
+**Benefits Package:** 
+- Comprehensive health/dental/vision (100% premium coverage for employee)
+- 6 weeks PTO + unlimited sick days + 1 week sabbatical at 5 years
+- $2,500/year professional development budget
+- Home office setup stipend ($1,500)
+- Mental health stipend ($200/month for therapy/coaching)
+- Parental leave (16 weeks primary, 12 weeks secondary, fully paid)
+
+## How to Apply
+
+Please submit: resume, cover letter addressing specifically how you'd approach our current growth challenge (we'll brief you on that), and 2-3 examples of analyses or projects you're proud of.
+
+**To Apply:** careers@momentumlabs.io
+
+**Application Deadline:** Rolling until filled
+
+---
+
+*Momentum Labs is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. We do not discriminate on the basis of race, color, religion, sex, national origin, age, disability, or any other protected characteristic.*

@@ -1,0 +1,47 @@
+```
+INVOICE
+
+Bill To:
+Meridian Logistics Solutions
+Attn: Accounts Payable Department
+847 Commerce Drive, Suite 200
+Charlotte, NC 28202
+
+From:
+Stellar Consulting Group
+2340 Innovation Parkway
+Austin, TX 78741
+Phone: (512) 555-0147
+Email: billing@stellarconsulting.com
+Tax ID: 74-2891543
+
+---
+
+Invoice #: SC-2024-008847
+Date: March 15, 2024
+Due Date: Net 45
+
+Project: Q1 Strategic Planning & Process Optimization
+
+Description of Services:
+
+Initial consultation & stakeholder interviews (8 hours)     $1,200.00
+Process mapping & workflow analysis (12 hours)              $1,800.00
+Gap assessment report                                       $950.00
+Recommendations presentation (2 sessions)                   $400.00
+
+---
+
+SUBTOTAL:        $4,350.00
+Sales Tax (7%):    $304.50
+---
+TOTAL DUE:       $4,654.50
+
+---
+
+Notes:
+Payment should reference invoice number. Wire transfer details available upon request.
+First session completed 3/8, final deliverables due by 4/2.
+
+Thank you for your business!
+```

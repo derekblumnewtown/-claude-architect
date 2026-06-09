@@ -1,0 +1,59 @@
+# SENIOR MANUFACTURING ENGINEER - ADDITIVE MANUFACTURING
+
+**Company:** Precision Dynamics Corp
+**Location:** Salt Lake City, UT (Hybrid - 3 days on-site)
+**Job Type:** Full-Time, Permanent
+**Posted:** November 14, 2024
+
+---
+
+## Position Overview
+
+Precision Dynamics Corp is seeking a Senior Manufacturing Engineer specializing in additive manufacturing (3D printing) technologies to lead process optimization and quality assurance initiatives across our aerospace and medical device divisions. This is a hands-on technical leadership role reporting directly to the VP of Manufacturing Operations.
+
+## Primary Responsibilities
+
+- Design and implement AM production workflows for complex metal and polymer components
+- Conduct failure analysis and root cause investigation on printed parts; develop corrective actions
+- Collaborate with design engineering to optimize part geometry for manufacturability via AM processes
+- Manage relationships with equipment vendors (SLM, DMLS, FDM systems) and material suppliers
+- Train and mentor 2-3 junior manufacturing technicians
+- Lead continuous improvement projects targeting cost reduction and cycle time
+- Maintain compliance with ISO 13485, AS9100C, and proprietary quality standards
+- Participate in new equipment evaluation and qualification
+
+## Required Qualifications
+
+- 8+ years manufacturing engineering experience, minimum 4 years with additive manufacturing technologies
+- Proficiency with CAD software (Fusion 360, SolidWorks, or similar)
+- Experience with process parameters: laser power, scan speed, layer height, support structure design
+- Strong knowledge of post-processing (heat treatment, machining, surface finishing) for AM components
+- Familiarity with design of experiments (DOE) and statistical process control (SPC)
+- Bachelor's degree in Mechanical Engineering, Manufacturing Engineering, or equivalent professional experience
+- Excellent written and verbal communication skills
+
+## Preferred Qualifications
+
+- Certification in additive manufacturing (ASTM, ISO standards)
+- Experience with Materialise or similar AM software platforms
+- Background in aerospace or medical device manufacturing
+- Lean Six Sigma Green Belt or higher
+- Patent or publication record in AM technology
+
+## Compensation & Benefits
+
+- **Salary Range:** $95,000 - $125,000 annually (based on experience)
+- Comprehensive health, dental, and vision coverage (company pays 85% of premiums)
+- 401(k) matching up to 6%
+- Annual performance bonus (15-25% of base)
+- Tuition reimbursement program
+- 4 weeks PTO + 10 company holidays
+- On-site gym and subsidized cafeteria
+
+## Work Environment
+
+Monday-Wednesday on-site; Thursday-Friday remote or flexible scheduling. Lab coat and safety footwear required. Exposure to powder-based materials; OSHA safety compliance mandatory. Occasional travel (5-10%) for vendor meetings and training.
+
+---
+
+**To Apply:** Submit resume, cover letter, and portfolio of past AM projects to manufacturing-careers@precisiondynamics.local. Applications reviewed on rolling basis. Equal Opportunity Employer.

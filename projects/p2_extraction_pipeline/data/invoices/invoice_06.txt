@@ -1,0 +1,48 @@
+```
+INVOICE
+
+Bill To:
+Marcus Chen
+chen.m.consulting@email.com
+(No address provided)
+
+From:
+Riverside Digital Services
+PO Box 447
+Portland, OR 97214
+
+---
+
+Project: Website Redesign & Migration - Phase 2
+
+Invoice #: RDS-2024-1847
+Date: March 15, 2024
+Due Date: NET 30
+
+Description of Work:
+Completed migration of legacy CMS to WordPress platform including database cleanup, 
+plugin configuration, and staff training session (4 hours). Two rounds of revisions 
+included. Hosting setup and SSL certificate installation. Some custom PHP modifications 
+for legacy form compatibility.
+
+Amount Due: $3,200.00
+
+Notes:
+- Initial deposit of $1,500 was applied on 2/28/24
+- Client approved scope changes via email 3/8/24 (no formal change order)
+- Outstanding balance from Invoice RDS-2024-1802 ($450) was NOT applied to this invoice
+
+Payment Methods:
+- Check: Riverside Digital Services, PO Box 447, Portland OR 97214
+- Wire transfer: Contact for banking details
+- Credit card: 3% processing fee applies
+
+No sales tax collected (OR resale cert on file - verify status)
+
+Please remit within 30 days. Late payments subject to 1.5% monthly interest.
+Questions? Reply to this email or call Marcus at 503-555-0147.
+
+Thank you for your business!
+
+---
+```

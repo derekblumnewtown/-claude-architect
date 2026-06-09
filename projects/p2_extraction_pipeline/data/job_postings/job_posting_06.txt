@@ -1,0 +1,46 @@
+# Senior Membrane Technology Specialist
+
+**Company:** AquaPure Systems Inc.
+**Location:** Wilmington, DE (manufacturing facility) / Remote (50%)
+**Job Type:** Full-Time, Exempt
+**Reports to:** Director of R&D
+
+## Position Overview
+
+AquaPure Systems is seeking a Senior Membrane Technology Specialist to lead the development and optimization of advanced filtration membranes for industrial water treatment applications. This role sits at the intersection of materials science, process engineering, and commercialization—you'll work with cross-functional teams to move laboratory innovations into production-scale manufacturing.
+
+## Primary Responsibilities
+
+- Design and conduct experimental protocols for membrane performance evaluation (flux, rejection rates, fouling resistance)
+- Collaborate with manufacturing to troubleshoot production inconsistencies and scale pilot batches to full production
+- Prepare technical documentation, test reports, and patent applications; present findings to internal stakeholders and external customers
+- Identify and evaluate emerging membrane materials and synthesis methods; assess commercial viability
+- Mentor 1-2 junior engineers and coordinate with external research partners at universities
+- Participate in customer technical calls to address application-specific challenges and gather requirements
+
+## Required Qualifications
+
+- BS in Chemical Engineering, Materials Science, or related field; MS or PhD preferred
+- 7+ years of hands-on experience in membrane science, polymer chemistry, or industrial filtration
+- Proficiency with SEM/TEM, AFM, or similar characterization equipment
+- Experience with MATLAB or Python for data analysis
+- Familiarity with regulatory requirements (NSF, FDA, EPA standards for water treatment)
+- Excellent written and verbal communication skills
+
+## Preferred Qualifications
+
+- Experience with reverse osmosis, nanofiltration, or ultrafiltration technologies
+- Knowledge of membrane fouling mechanisms and mitigation strategies
+- Previous experience in a manufacturing or scaling environment
+- Patent authorship or publication record
+- Project management certification (PMP or equivalent)
+
+## Compensation & Benefits
+
+We offer a competitive salary commensurate with experience (estimated range $115,000–$155,000 depending on background), comprehensive health coverage, 401(k) matching, professional development budget, and flexible work arrangements. Relocation assistance available for qualified candidates.
+
+**To Apply:** Submit resume, cover letter, and contact information for three references to careers@aquapuresystems.com. Please include "MTS-06-2024" in the subject line.
+
+---
+
+*AquaPure Systems is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.*

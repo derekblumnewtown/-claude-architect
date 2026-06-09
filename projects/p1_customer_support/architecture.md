@@ -128,20 +128,21 @@ the wrong customer's order.
 - If failed: reason for failure, escalation to human
 
 **Business rules:**
-- Customer ID must be verified before this tool can run
-- Order ID must be verified before this tool can run
-- Refunds under $500 → process automatically
-- Refunds over $500 → PostToolUse hook intercepts 
-  and redirects to escalate_to_human automatically
+- Customer ID must be verified before this tool can run (enforced by PreToolUse hook)
+- Order ID must be verified before this tool can run (enforced by PreToolUse hook)
+- Refunds of $500 or less → process automatically
+- Refunds over $500 → PreToolUse hook blocks the call *before* it runs
+  and returns an error to Claude (requires_escalation), so Claude escalates
+- Order must have status "delivered" to be eligible (enforced inside the tool)
+- Orders already refunded → cannot refund again (enforced inside the tool)
 - Wait for database confirmation before telling customer
 - Never tell customer refund is complete until database confirms
-- Orders already refunded → cannot refund again, escalate
 
 **Error cases:**
-- Refund over $500 → hook fires, redirect to escalation
-- Database confirmation fails → escalate to human
-- Order already refunded → tell customer, escalate if disputed
-- Order not eligible for refund → explain policy, escalate if disputed
+- Refund over $500 → PreToolUse hook blocks; refund never executes, Claude escalates
+- Order not "delivered" → tool returns not-eligible error, explain policy, escalate if disputed
+- Order already refunded → tool returns error, tell customer, escalate if disputed
+- Order not found for this customer → tool returns error (requires_escalation)
 
 
 ### escalate_to_human
@@ -170,49 +171,64 @@ the wrong customer's order.
 - Recommended next action for the human agent
 
 ### Hooks
-**Hook 1 — PostToolUse on process_refund**
-Fires after process_refund.
-If amount > $500:
-    Block the refund
-    Redirect to escalate_to_human automatically
-    Claude never sees the refund result
-If amount <= $500:
-    Let it through
-    Claude gets the confirmation
+We run three hooks. Two are PreToolUse (they can block a call before it
+runs); one is PostToolUse (it observes the result after the fact).
 
-**Why a hook and not a prompt instruction:**
-The system prompt could say "never process refunds over $500"
-but Claude is probabilistic — it usually follows instructions
-but not always. One mistake means real money goes to the wrong
-place. A hook checks the refund amount in code — deterministic,
-no exceptions, no hallucinations possible.
-
-**Hook 2 — Prerequisite before lookup_order**
-If verified customer ID exists:
-    Allow lookup_order to run
+**Hook 1 — PreToolUse on lookup_order** (`hook_pre_lookup_order`)
+Two checks, both must pass or the call is blocked:
 If no verified customer ID:
     Block lookup_order
-    Return error to Claude: "Must verify customer first"
-
-**Why a hook and not a prompt instruction:**
-The system prompt could say "never move forwardw with out customer ID"
-but Claude is probabilistic — it usually follows instructions
-but not always. One mistake means we are not seeing the correct customer orders. A hook checks for a verified customer ID in code — deterministic,
-no exceptions, no hallucinations possible.
-
-**Hook 3 — Prerequisite before process_refund**
-If verified customer ID + order ID exists:
-    Allow proces_refund to run
-If no verified customer ID + order ID:
+    Return error to Claude: "Must verify customer identity first"
+If the customer_id Claude passed does not match the verified customer ID:
     Block lookup_order
-    Return error to Claude: "Must verify order first"
+    Return error to Claude: "Customer ID mismatch — use the verified ID"
+Otherwise allow the call.
+
 **Why a hook and not a prompt instruction:**
-The system prompt could say "never move forward without 
-customer ID and order ID" but Claude is probabilistic — 
-it usually follows instructions but not always. One mistake 
-means we are refunding the wrong order. A hook checks for 
-verified customer ID and order ID in code — deterministic,
-no exceptions, no hallucinations possible.
+The system prompt could say "never move forward without a verified
+customer ID" but Claude is probabilistic — it usually follows
+instructions but not always. One mistake means we surface the wrong
+customer's orders. The hook verifies in code — deterministic, no
+exceptions, no hallucinations possible.
+
+**Hook 2 — PreToolUse on process_refund** (`hook_pre_process_refund`)
+Three checks, evaluated in order; the first failure blocks the call:
+If no verified customer ID:
+    Block — "Must verify customer identity first"
+If no verified order ID:
+    Block — "Must verify order first"
+If refund amount > $500:
+    Block — error with requires_escalation=True
+    (the refund never executes; Claude escalates to a human)
+Otherwise allow the call.
+
+Note: the $500 enforcement lives HERE, in the PreToolUse hook — not in
+PostToolUse. Blocking before execution means no money ever moves on an
+over-threshold refund, even briefly.
+
+**Why a hook and not a prompt instruction:**
+The system prompt could say "never refund over $500 / never move forward
+without customer and order IDs" but Claude is probabilistic. One mistake
+means real money goes to the wrong place or the wrong order is refunded.
+The hook checks the amount and prerequisites in code — deterministic, no
+exceptions, no hallucinations possible.
+
+**Hook 3 — PostToolUse on process_refund** (`hook_post_process_refund`)
+Fires only after a refund that was allowed through (i.e. ≤ $500 and all
+prerequisites met). It does not block anything — it logs the successful
+refund (amount + confirmation number) for the audit trail and returns the
+tool result unchanged. The $500 threshold check used to live here; it
+moved to Hook 2 so over-threshold refunds never reach execution.
+
+**Key principle:**
+Prompt instructions tell Claude what to do.
+Hooks make it impossible to do the wrong thing.
+Use a PreToolUse hook when a mistake has real consequences (block before
+it happens); use a PostToolUse hook to observe/normalize what did happen.
+
+Note: refund *eligibility* checks that are not security prerequisites —
+order must be "delivered", and not already refunded — are enforced inside
+the process_refund tool itself, not in a hook.
 
 **Key principle:**
 Prompt instructions tell Claude what to do.
@@ -236,8 +252,14 @@ Can we find the order? (max 2 attempts)
     YES → continue
          ↓
 Is refund amount over $500?
-    YES → escalate_to_human (reason: requires manager approval)
+    YES → PreToolUse hook blocks process_refund
+        → escalate_to_human (reason: requires manager approval)
     NO  → continue
+         ↓
+Is the order eligible? (status "delivered" AND not already refunded)
+    NO  → process_refund returns not-eligible error
+        → explain policy, escalate if disputed
+    YES → continue
          ↓
 Did refund process successfully?
     NO  → escalate_to_human (reason: processing failed)

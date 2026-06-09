@@ -1,0 +1,55 @@
+```
+INVOICE
+
+From: Meridian Creative Solutions
+      Suite 404, Riverside Business Park
+      Portland, OR 97204
+      Contact: Marco J. / marco@meridian-creative.net
+
+Bill To: Thompson & Associates Law Firm
+         Attn: Accounts Payable
+         1847 Commerce Avenue
+         Portland, OR 97214
+
+Invoice #: MCS-2024-8847
+Date: November 8, 2024
+Due: Net 30
+
+─────────────────────────────────────────────────────────
+
+DESCRIPTION OF SERVICES:
+
+Brand identity refresh consultation (3 sessions @ $250/hr)
+  Design concepts (initial round) - 12 hours          $3,000.00
+  Revisions and refinements                           $1,850.00
+  Logo file delivery (all formats)                      $400.00
+  Brand guidelines documentation                        $650.00
+
+Materials & Production:
+  Premium business cards (1000 units, printed)          $285.00
+  Letterhead stock (500 sheets)                         $175.00
+  Digital asset licensing                               $200.00
+
+─────────────────────────────────────────────────────────
+
+Subtotal                                              $6,560.00
+Oregon Sales Tax (0% - Professional Services)             $0.00
+                                                    ──────────
+TOTAL DUE                                             $6,560.00
+
+─────────────────────────────────────────────────────────
+
+Payment Methods:
+• ACH Transfer: Account details on file
+• Check: Payable to Meridian Creative Solutions
+• Credit Card: 3% processing fee applies
+
+Notes:
+Files transferred via secure cloud link on 11/7.
+Usage rights: Single entity, perpetual license.
+Invoiced work completed as of 11/8/2024.
+
+Questions? Reply to this email or call 503-555-0142 ext. 14
+
+Thank you for your business!
+```

@@ -1,0 +1,40 @@
+```
+INVOICE
+
+From: Meridian Design Studios
+      412 Commerce Way, Suite 300
+      Portland, OR 97214
+      Contact: Maya Chen
+      Phone: (503) 555-0847
+      Email: maya.chen@meridiandesign.io
+
+Bill To: Cascadia Coffee Roasters
+         Attn: Operations Manager
+         2847 NW Industrial Avenue
+         Portland, OR 97209
+
+Invoice #: MDS-2024-03847
+Date: March 15, 2024
+Due Date: April 15, 2024
+
+Description of Services:
+Brand identity refresh project for Spring 2024 product line. Includes 
+logo refinement, color palette development, and packaging design mockups 
+for client approval. Three rounds of revisions included. Additional revisions 
+billed at $150/hour.
+
+Partial Payment Received: $2,500.00 (March 1, 2024 - Deposit)
+
+Amount Due: $5,875.00
+
+Notes:
+- Final designs to be delivered via Dropbox link upon receipt of payment
+- Print-ready files in PDF and AI formats
+- Usage rights limited to Cascadia Coffee Roasters branding only
+- Project timeline: 4 weeks from final approval
+
+Questions? Please contact Maya at the number above.
+
+NO SALES TAX COLLECTED (OR-based service)
+PAYMENT METHOD: Bank transfer preferred. Wire details available upon request.
+```

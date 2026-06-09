@@ -1,0 +1,51 @@
+```
+INVOICE
+
+Bill To:
+Marcus Chen
+Apt 4B, The Meridian Complex
+San Francisco, CA 94103
+
+From:
+Coastal Wellness Coaching
+dba "Tidal Mind"
+License #CW-2847-SF
+
+Invoice #: CW-2847-13
+Date: November 8, 2024
+Due: Upon Completion of Services
+
+═══════════════════════════════════════════════════════════════
+
+DESCRIPTION OF SERVICES                          AMOUNT
+
+12-Week Integrated Wellness Program (Coaching + Nutrition)
+  - Initial Assessment (90 min)                   $180.00
+  - Weekly 1:1 Sessions (11 × 45 min @ $95/ea)  $1,045.00
+  - Custom Meal Planning & Macros                $240.00
+  - Supplement Protocol Review                   $75.00
+  - Progress Tracking Dashboard (12 weeks)       $49.99
+
+Partial Refund - Cancelled Week 7-8 Sessions    -$190.00
+                                                 ───────────
+SUBTOTAL                                         $1,399.99
+
+Applicable Tax (8.625%)                          $120.79
+
+═══════════════════════════════════════════════════════════════
+
+TOTAL DUE                                        $1,520.78
+
+Payment Method: ACH Transfer Preferred
+Bank Details on File (Last 4: 3847)
+
+Notes:
+- Program commenced October 15, 2024
+- Client requested pause weeks 7-8 (refunded at prorated rate)
+- Remaining 3 sessions valid through end of Q4
+- Supplement costs NOT included in this invoice - client purchased direct
+
+Questions? Contact: marcus@tidalmindsf.com or (415) 555-0847 x12
+
+No formal payment terms specified. Coaching services rendered in good faith.
+```

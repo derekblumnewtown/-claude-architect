@@ -1,0 +1,67 @@
+# Senior Aquaculture Systems Engineer
+
+## About the Role
+
+We're seeking an experienced Aquaculture Systems Engineer to join our innovative team at Blue Horizon Sustainable Fisheries. This is a unique hybrid position combining marine biology expertise with industrial systems design—ideal for someone who bridges the gap between environmental science and engineering.
+
+You'll be responsible for designing, optimizing, and maintaining recirculating aquaculture system (RAS) infrastructure at our three operational facilities across the Pacific Northwest. This includes water quality management systems, automated feeding mechanisms, waste treatment protocols, and emerging IoT monitoring solutions.
+
+**Location:** Portland, OR (primary), with quarterly travel to Bellingham, WA and Astoria, OR facilities
+
+**Employment Type:** Full-time, Exempt
+
+**Reports To:** Director of Operations
+
+## Key Responsibilities
+
+- Design and implement RAS upgrades to increase production efficiency while maintaining water quality standards exceeding EPA and state regulations
+- Conduct daily system monitoring and troubleshoot mechanical, chemical, and biological issues across multiple facilities
+- Collaborate with the 8-person operations team to develop preventative maintenance schedules
+- Prepare technical documentation, standard operating procedures, and training materials for facility staff
+- Manage vendor relationships for equipment procurement; evaluate new technologies quarterly
+- Maintain compliance records and lead facility inspections
+- Participate in industry research partnerships (2-3 hours/month expected)
+
+## Required Qualifications
+
+- 6+ years working directly with aquaculture or related closed-loop aquatic systems
+- Strong understanding of biofilter microbiology and nitrification cycles
+- Proficiency with SCADA systems or similar industrial control platforms
+- Experience troubleshooting dissolved oxygen, pH, and ammonia management
+- Familiarity with mechanical systems (pumps, aerators, clarifiers, heat exchangers)
+- Ability to read and interpret technical schematics and P&IDs
+- Excellent written and verbal communication skills
+- Valid driver's license for facility travel
+
+## Preferred Qualifications
+
+- Bachelor's degree in aquaculture, aquatic science, marine biology, or engineering discipline
+- Experience with barramundi or sea bass farming operations
+- Knowledge of machine learning applications in aquaculture monitoring
+- Background with RAS design software (Aquacloud, ProCal, or equivalent)
+- Experience leading or mentoring junior technicians
+- OSHA 30-hour certification
+
+## What We Offer
+
+**Compensation & Benefits:** $68,000 - $82,000 annually, commensurate with experience. We also provide:
+- Comprehensive health, dental, and vision coverage (company pays 80% of premiums)
+- Matching 401(k) up to 4%
+- Paid time off: 3 weeks vacation, 10 sick days, 5 personal days
+- Professional development budget: $2,000/year
+- Flexible work schedule with core hours 8 AM - 4 PM
+- Equipment allowance for specialized work wear ($500/year)
+- Access to our on-site fitness facility
+- Quarterly team retreats
+
+## Company Culture
+
+Blue Horizon is a B-Corp certified company founded in 2015, focused on reducing ocean wild-catch pressures through sustainable land-based farming. We're 34 employees strong and prioritize work-life balance, environmental stewardship, and genuine collaboration. You'll work in a casual environment where jeans and steel-toed boots are standard attire.
+
+## How to Apply
+
+Submit your resume, a brief cover letter explaining your interest in sustainable aquaculture, and contact information for two professional references to careers@bluehorizonfish.com. In your subject line, write "Aquaculture Systems Engineer Application."
+
+**Closing Date:** Applications reviewed on a rolling basis until position filled. Position open immediately.
+
+We are an equal opportunity employer committed to building a diverse and inclusive workplace. We actively encourage applications from people of color, women, LGBTQ+ individuals, veterans, and people with disabilities.

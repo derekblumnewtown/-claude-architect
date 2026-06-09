@@ -1,0 +1,74 @@
+```
+INVOICE
+
+From: Meridian Consulting Group
+       Suite 1401, Commerce Tower
+       Denver, CO 80202
+       Phone: (303) 555-0847
+
+Bill To: Jackson Family Trust
+         c/o Patricia Chen, Trustee
+         2847 Pinewood Lane
+         Boulder, CO 80304
+
+Invoice #: MER-2024-0891
+Date: March 15, 2024
+Due Date: Net 45
+
+─────────────────────────────────────────────────────────
+
+DESCRIPTION OF SERVICES
+
+Strategic Planning Workshop - 3 sessions
+Facilitator: Michael Rodriguez
+Location: Client offices (Boulder)
+March 2-9-16, 2024, 4 hours each
+Rate: $185/hour
+Subtotal: $2,220.00
+
+Executive Summary Report (20 pages)
+Research, analysis, design recommendations
+Subtotal: $950.00
+
+Quarterly Follow-up Consultation Call
+Q1 Check-in (90 minutes)
+Rate: $250/hour
+Subtotal: $375.00
+
+─────────────────────────────────────────────────────────
+
+Materials & Expenses:
+  - Document production/binding        $45.00
+  - Travel (mileage, 187 mi @ $0.67)   $125.29
+  - Miscellaneous supplies             $18.71
+
+TOTAL EXPENSES:                        $189.00
+
+─────────────────────────────────────────────────────────
+
+SUMMARY
+
+Subtotal (Services):                 $3,545.00
+Subtotal (Materials/Expenses):         $189.00
+                                    ─────────
+Subtotal:                           $3,734.00
+
+Sales Tax (CO - 4.63%):                $172.81
+
+─────────────────────────────────────────────────────────
+TOTAL DUE:                          $3,906.81
+─────────────────────────────────────────────────────────
+
+Payment Methods Accepted:
+  • Check (payable to Meridian Consulting Group)
+  • ACH Transfer (contact for banking details)
+  • Credit Card (3% processing fee applied)
+
+Notes: Patricia - Per our conversation, the follow-up call 
+scheduled for April 12th can be rescheduled if needed. 
+Contact Michael directly at m.rodriguez@meridian-consult.com
+
+─────────────────────────────────────────────────────────
+Please remit payment by April 29, 2024
+Questions? Email: billing@meridian-consult.com
+```

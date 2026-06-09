@@ -1,0 +1,62 @@
+```
+INVOICE
+
+Bill To:
+Meridian Consulting Group
+Attn: Finance Department
+Suite 400, 2847 Commerce Drive
+Denver, CO 80216
+
+From: Freelance Creative Services
+Contact: Maria Chen
+Phone: (555) 287-4091
+Email: maria.chen.creative@email.com
+
+---
+
+Project: Brand Identity Redesign - Phase 2
+Invoice Date: November 8, 2024
+Invoice #: MC-2024-1108-A
+Project Reference: MER-2024-Q4-REBRAND
+
+Description of Work:
+Logo variations and color palette refinement for healthcare division rebrand. 
+Includes 6 revision rounds, stakeholder presentation materials, and brand 
+guidelines document (first draft).
+
+Hours Worked: 34.5 hours
+Rate: $85/hour
+Subtotal: $2,932.50
+
+EXPENSES:
+Software licenses (Adobe CC - 1 month): $84.99
+Stock photography credits: $45.00
+Consultation with color theorist: $200.00
+Total Expenses: $329.99
+
+---
+
+SUBTOTAL: $3,262.49
+Tax Rate: 8.2% (Colorado)
+Sales Tax: $267.52
+
+TOTAL DUE: $3,529.01
+
+---
+
+PAYMENT INSTRUCTIONS:
+Preferred: Bank transfer to account ending in 7413
+Alternative: Check payable to Maria Chen, mailed to above address
+
+Retainer Credit Applied: -$500.00
+Amount Due After Credit: $3,029.01
+
+---
+
+Notes:
+- Final brand guidelines document delivery pending client feedback (expected by Nov 15)
+- Additional revision rounds beyond 6 will be billed at $85/hour
+- Invoice payment expected within 30 days of receipt
+
+No explicit payment deadline specified beyond standard terms.
+```

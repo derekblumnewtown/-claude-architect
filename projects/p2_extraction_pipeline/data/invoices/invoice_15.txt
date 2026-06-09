@@ -1,0 +1,67 @@
+```
+INVOICE
+
+From: Meridian Consulting Group
+      Suite 1200, Commerce Tower
+      Denver, CO 80202
+      Phone: (720) 555-0147
+      Email: billing@meridian-consult.com
+      Tax ID: 84-1627549
+
+Bill To: Bootstrap Ventures LLC
+         c/o Maya Chen
+         1847 Innovation Drive
+         Austin, TX 78704
+
+Invoice #: MER-2024-8847
+Date: November 8, 2024
+Due Date: NET 45
+
+---
+
+DESCRIPTION OF SERVICES
+
+Q4 Strategic Planning Workshop (2 days)
+- Facilitation & materials
+- 12 attendees @ $850/person
+
+Interim Strategy Report (draft version)
+- Research, analysis, recommendations
+
+Executive Coaching Sessions
+- 4 sessions × 2 hours
+- Coach: Dr. Patricia Lim
+
+Market Analysis - Healthcare Sector
+- Competitive landscape assessment
+- Pricing benchmark study
+- Trend analysis (preliminary)
+
+                                          AMOUNT
+                                        --------
+Workshop Services                       $10,200.00
+Report (partial completion)              $4,500.00
+Coaching - Dr. Lim                       $3,200.00
+Market Research                          $6,750.00
+                                        ----------
+Subtotal                                $24,650.00
+Expenses (travel, materials)             $1,847.32
+                                        ----------
+TOTAL DUE                               $26,497.32
+
+---
+
+NOTES:
+- Market Analysis final version due Nov 22
+- Report completion contingent on client feedback by Nov 15
+- Travel expenses include flights DEN-AUS (11/3-11/5) and ground transport
+- Please note: One coaching session (11/12) rescheduled to 12/3 - will be invoiced next month
+
+Payment Method: Wire transfer preferred
+Bank: First National Bank of Colorado
+Account: [REDACTED - sent separately]
+
+Questions? Contact: billing@meridian-consult.com or (720) 555-0147 ext. 304
+
+Thank you for your business!
+```

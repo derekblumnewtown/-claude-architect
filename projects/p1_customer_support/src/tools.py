@@ -83,7 +83,8 @@ def lookup_order(customer_id: str, order_number: str) -> dict:
 def process_refund(customer_id: str, order_id: str, refund_amount: float, reason: str) -> dict:
     """
     Process a refund for a verified customer and order.
-    Hook 1 intercepts this after execution if amount > $500.
+    Prerequisites and the $500 limit are enforced by hook_pre_process_refund
+    before this runs; here we check eligibility (delivered, not already refunded).
     """
     log_event(logger, "process_refund_called", customer_id=customer_id, refund_amount=refund_amount)
     

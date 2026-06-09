@@ -1,0 +1,61 @@
+# Senior Materials Scientist - Advanced Composites Division
+
+**Company:** Hexcel Aerospace Materials (Portland, OR)
+
+**Position Type:** Full-Time, Exempt
+
+**Reports To:** VP of R&D
+
+---
+
+## Overview
+
+Hexcel is seeking a Senior Materials Scientist to lead development of next-generation carbon fiber reinforced polymer (CFRP) systems for commercial and defense aerospace applications. This role bridges fundamental materials research with manufacturing scale-up, requiring both technical depth and cross-functional leadership.
+
+The successful candidate will establish material specifications, conduct failure mode analysis, and mentor junior researchers while maintaining publication standards for peer-reviewed journals.
+
+## Key Responsibilities
+
+- Design and execute experimental protocols for resin matrix formulations, fiber-matrix interface characterization, and composite mechanical testing (tensile, compression, fatigue, impact)
+- Lead 3-5 person research team on assigned projects; conduct performance reviews and professional development planning
+- Collaborate with manufacturing engineers to translate lab discoveries into production processes; troubleshoot scale-up challenges
+- Prepare technical reports, patent documentation, and quarterly presentations for executive stakeholders
+- Participate in industry standards committees (ASTM, SAE) and represent company at technical conferences
+- Maintain and calibrate equipment including DMA, TGA, SEM, and universal testing machines
+- Respond to customer technical inquiries; conduct failure investigations on fielded components
+
+## Required Qualifications
+
+- Ph.D. in Materials Science, Chemical Engineering, Polymer Science, or related field
+- 7+ years of industry experience in composite materials development or aerospace manufacturing
+- Proficiency with MATLAB, statistical software (JMP preferred), and materials characterization techniques
+- Strong written and oral communication skills; ability to explain complex science to non-technical audiences
+- Active U.S. security clearance or ability to obtain one
+
+## Preferred Qualifications
+
+- Experience with thermoset and thermoplastic matrix systems
+- Familiarity with design of experiments (DOE) methodology
+- Publication record in peer-reviewed journals
+- Project management experience; exposure to aerospace quality standards (AS9100, SAE AMS)
+- Knowledge of carbon fiber manufacturing and recycling technologies
+
+## Compensation & Benefits
+
+Salary: $145,000 - $185,000 DOE
+
+- Comprehensive health/dental/vision coverage (company covers 85% of premiums)
+- 401(k) with 6% match, vested immediately
+- 22 days PTO, 10 holidays, sabbatical program after 10 years
+- Tuition reimbursement ($5,000/year)
+- On-site fitness center, subsidized cafeteria
+
+## Physical Requirements
+
+Ability to lift 50 lbs occasionally; frequent standing/walking in lab environment. Lab coat, safety glasses, and steel-toed boots required. Some travel to customer sites (10-15% annually).
+
+---
+
+**Application Instructions:** Submit resume, cover letter, and list of 3 references to careers@hexcel.com. Review begins immediately; position open until filled.
+
+**EEO Statement:** Hexcel is an Equal Opportunity Employer. We celebrate diversity and are committed to fostering an inclusive workplace.

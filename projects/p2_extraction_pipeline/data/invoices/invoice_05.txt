@@ -1,0 +1,57 @@
+```
+INVOICE
+
+Client: Morrison & Associates Legal Services
+Invoice #: INV-2024-7834
+Date: March 15, 2024
+Due: Net 45
+
+─────────────────────────────────────────────────────────────
+
+FROM:
+TechVenture Solutions Inc.
+142 Innovation Drive, Suite 300
+Portland, OR 97214
+Tax ID: 94-3847562
+
+TO:
+Morrison & Associates
+Attn: Finance Department
+890 Commerce Boulevard
+Seattle, WA 98101
+
+─────────────────────────────────────────────────────────────
+
+DESCRIPTION OF SERVICES
+
+Custom software development & consulting - Q1 2024 engagement
+per Statement of Work dated January 8, 2024
+
+Week ending 3/1:  40 hours @ $185/hr                    $7,400.00
+Week ending 3/8:  38 hours @ $185/hr                    $7,030.00
+Week ending 3/15: 42 hours @ $185/hr                    $7,770.00
+
+Infrastructure setup & deployment (one-time)            $2,500.00
+
+─────────────────────────────────────────────────────────────
+
+Subtotal:                                               $24,700.00
+Sales Tax (WA - 10.25%):                                 $2,531.75
+
+TOTAL DUE:                                              $27,231.75
+
+─────────────────────────────────────────────────────────────
+
+Payment Methods:
+• ACH Transfer: TechVenture Solutions, Cascade Bank Account #447829-156
+• Check: Payable to TechVenture Solutions, mail to address above
+• Credit Card: Available upon request (3% processing fee applies)
+
+Notes: 
+- Invoice covers time through Friday, March 15
+- Ongoing weekly billing will continue through end of March
+- Contact: Alex Chen, Project Lead (a.chen@techventure.io)
+
+Please reference Invoice #INV-2024-7834 with payment.
+
+```
