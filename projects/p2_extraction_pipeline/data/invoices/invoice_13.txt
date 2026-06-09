@@ -1,51 +1,55 @@
 ```
-INVOICE
-
-Bill To:
-Marcus Chen
-Apt 4B, The Meridian Complex
-San Francisco, CA 94103
-
-From:
-Coastal Wellness Coaching
-dba "Tidal Mind"
-License #CW-2847-SF
-
-Invoice #: CW-2847-13
-Date: November 8, 2024
-Due: Upon Completion of Services
-
+STATEMENT OF WORK - CREATIVE SERVICES
 ═══════════════════════════════════════════════════════════════
 
-DESCRIPTION OF SERVICES                          AMOUNT
+Client: Meridian Digital Solutions
+Project: Brand Identity Refresh & Marketing Collateral Design
+Period: November 2024
 
-12-Week Integrated Wellness Program (Coaching + Nutrition)
-  - Initial Assessment (90 min)                   $180.00
-  - Weekly 1:1 Sessions (11 × 45 min @ $95/ea)  $1,045.00
-  - Custom Meal Planning & Macros                $240.00
-  - Supplement Protocol Review                   $75.00
-  - Progress Tracking Dashboard (12 weeks)       $49.99
+─────────────────────────────────────────────────────────────────
 
-Partial Refund - Cancelled Week 7-8 Sessions    -$190.00
-                                                 ───────────
-SUBTOTAL                                         $1,399.99
+SERVICES RENDERED:
 
-Applicable Tax (8.625%)                          $120.79
+Discovery & Strategy Sessions (3 sessions × 4 hrs)        $1,800.00
+  └─ Brand audit, competitive analysis, stakeholder interviews
+
+Logo Design (5 concepts, 2 revision rounds)                $2,200.00
+
+Collateral Suite Development:
+  • Business card design (2 variations)
+  • Letterhead & envelope templates
+  • Email signature templates
+  • Social media profile templates
+                                                           $1,400.00
+
+Typography & Color Palette Development                      $600.00
+
+Print-Ready File Preparation & Production Specs             $350.00
+
+TOTAL WORK: $6,350.00
+
+─────────────────────────────────────────────────────────────────
+
+PAYMENT STRUCTURE:
+  50% upon project kickoff (DUE NOW)           $3,175.00
+  50% upon final delivery                      $3,175.00
+
+PAID TO DATE: $3,175.00 ✓ (Received 11/8/2024)
+BALANCE DUE: $3,175.00
+
+Due: Upon completion (estimated 12/20/2024)
+
+─────────────────────────────────────────────────────────────────
+
+NOTES:
+• Additional revision rounds beyond scope: $150/hour
+• Rush delivery available at 25% premium
+• All files in Adobe CC format + web-optimized exports
+• Usage rights: Client retains full ownership upon payment
+• Timeline assumes feedback within 48 hours
+
+Contact: Alex Chen, Creative Director
+alex@studiochencreative.com | (415) 555-0847
 
 ═══════════════════════════════════════════════════════════════
-
-TOTAL DUE                                        $1,520.78
-
-Payment Method: ACH Transfer Preferred
-Bank Details on File (Last 4: 3847)
-
-Notes:
-- Program commenced October 15, 2024
-- Client requested pause weeks 7-8 (refunded at prorated rate)
-- Remaining 3 sessions valid through end of Q4
-- Supplement costs NOT included in this invoice - client purchased direct
-
-Questions? Contact: marcus@tidalmindsf.com or (415) 555-0847 x12
-
-No formal payment terms specified. Coaching services rendered in good faith.
 ```

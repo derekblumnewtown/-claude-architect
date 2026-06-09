@@ -16,17 +16,21 @@ def generate_documents(doc_type: str, count: int, output_dir: str):
     
     prompts = {
         "invoice": """Generate a realistic invoice as plain text. 
+            Do not include Invoices.
             Vary the format each time — some formal, some informal, some with line items, 
             some without. Occasionally omit optional fields like tax or payment terms.
             Make some have missing or ambiguous data to test edge cases.""",
         
-        "job_posting": """Generate a realistic job posting as plain text.
+        "job_posting": """Generate a single realistic job posting as plain text for ONE job at ONE company.
+            Do not include multiple job listings.
             Vary the format — some structured with clear sections, some as flowing paragraphs.
-            Include varied roles across industries. Some should have salary ranges, some should not.
-            Some should list specific skill years, some just list skills. Include edge cases like 
-            missing zip codes or ambiguous job types.""",
+            Vary the industry and role each time.
+            Some should have salary ranges, some should not.
+            Some should list specific skill years, some just list skills.
+            Include edge cases like missing zip codes or ambiguous job types.""",
         
         "menu": """Generate a realistic restaurant menu as plain text.
+            Do not include multiple menus.
             Vary the restaurant type — Italian, Mexican, American diner, fine dining, etc.
             Some menus should have dietary flags, some should not.
             Some items should have descriptions, some just a name and price.

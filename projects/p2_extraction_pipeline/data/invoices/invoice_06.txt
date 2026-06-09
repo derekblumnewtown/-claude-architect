@@ -1,48 +1,43 @@
 ```
-INVOICE
+STATEMENT OF CHARGES
+========================
 
-Bill To:
-Marcus Chen
-chen.m.consulting@email.com
-(No address provided)
+Client: Morrison & Associates Legal Services
+Project: Contract Review - Merger Documentation
+Period: November 2024
 
-From:
-Riverside Digital Services
-PO Box 447
-Portland, OR 97214
+Dear Ms. Chen,
 
----
+As discussed during our November 15th consultation, please find below our charges for 
+professional services rendered:
 
-Project: Website Redesign & Migration - Phase 2
+Initial consultation and document intake          $450.00
+Legal review of purchase agreement (8 hrs)       $2,400.00
+Markup and redline of section 4.2                $600.00
+Conference call with client team                 $300.00
+Preparation of summary memo                      $525.00
+                                                 ----------
+SUBTOTAL                                         $4,275.00
 
-Invoice #: RDS-2024-1847
-Date: March 15, 2024
-Due Date: NET 30
+Note: A 10% professional courtesy discount has been applied per your firm's 
+existing relationship with our practice.
 
-Description of Work:
-Completed migration of legacy CMS to WordPress platform including database cleanup, 
-plugin configuration, and staff training session (4 hours). Two rounds of revisions 
-included. Hosting setup and SSL certificate installation. Some custom PHP modifications 
-for legacy form compatibility.
+AMOUNT DUE                                        $3,847.50
 
-Amount Due: $3,200.00
+We bill on a retainer basis. Please charge this to your existing account 
+(Reference #ML-2847). If you have questions about any line item, reach out 
+to our billing department.
 
-Notes:
-- Initial deposit of $1,500 was applied on 2/28/24
-- Client approved scope changes via email 3/8/24 (no formal change order)
-- Outstanding balance from Invoice RDS-2024-1802 ($450) was NOT applied to this invoice
+Services were provided between 11/2/24 - 11/22/24.
 
-Payment Methods:
-- Check: Riverside Digital Services, PO Box 447, Portland OR 97214
-- Wire transfer: Contact for banking details
-- Credit card: 3% processing fee applies
+Best regards,
 
-No sales tax collected (OR resale cert on file - verify status)
-
-Please remit within 30 days. Late payments subject to 1.5% monthly interest.
-Questions? Reply to this email or call Marcus at 503-555-0147.
-
-Thank you for your business!
+Robert H. Kelley
+Managing Attorney
+Kelley & Pine LLP
+Phone: 617-555-0147
 
 ---
+[Note: No invoice number, no explicit due date, discount applied but not calculated 
+separately, minimal formatting]
 ```

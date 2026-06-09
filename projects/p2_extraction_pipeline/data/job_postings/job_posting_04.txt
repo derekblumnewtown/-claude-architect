@@ -1,30 +1,20 @@
-# POSITION AVAILABLE: Senior Materials Science Researcher
+SENIOR SPATIAL DATA ANALYST
+Geospatial Solutions Inc. | Remote (US-based)
 
-## Company
-Helix Biotech Solutions - Cambridge, MA Area
+We're looking for a Senior Spatial Data Analyst to join our growing team at Geospatial Solutions Inc. This is a unique role that sits at the intersection of environmental science, urban planning, and software development.
 
-## About Us
-Helix Biotech Solutions is a mid-stage biotech firm focused on developing next-generation polymeric materials for medical device applications. We've been operating since 2015 and have grown to 87 employees across our research, manufacturing, and commercial divisions.
+Your primary responsibilities will include developing spatial analysis workflows for municipal clients, managing large geospatial datasets (think multi-terabyte LiDAR point clouds and satellite imagery archives), and mentoring junior analysts. You'll work with open-source GIS tools like QGIS and PostGIS alongside proprietary platforms. Some days you'll be writing Python scripts to automate data pipelines; other days you'll present findings to city planners or environmental agencies.
 
-## The Role
-We're seeking a Senior Materials Science Researcher to join our R&D team on a full-time basis. You'll lead the characterization and development of novel biodegradable polymers for surgical implants. This position reports directly to our VP of Research and involves both bench work and cross-functional collaboration with our engineering and regulatory teams.
+What we're looking for:
+- 5+ years working with geospatial data (GIS, remote sensing, or similar)
+- Strong Python or R skills for spatial analysis and data manipulation
+- Experience with at least one major GIS platform (ArcGIS, QGIS, or open-source alternatives)
+- Familiarity with spatial databases, ideally PostGIS
+- Ability to communicate complex findings to non-technical stakeholders
+- Bachelor's degree in geography, geomatics, environmental science, computer science, or related field (or equivalent professional experience)
 
-Your primary responsibilities will include:
-- Designing and executing materials testing protocols
-- Mentoring 2-3 junior researchers
-- Preparing technical documentation for FDA submissions
-- Presenting findings at industry conferences
-- Managing a budget of approximately $180K annually for lab supplies and equipment
+Nice to have: Experience with cloud platforms (AWS, GCP), machine learning applications in geospatial work, experience with web mapping libraries (Leaflet, Mapbox).
 
-## Required Qualifications
-PhD in Materials Science, Chemistry, Chemical Engineering, or related field. Minimum 8 years post-doctoral experience in polymer science or materials characterization. Must have hands-on experience with: thermal analysis (DSC, TGA), microscopy techniques (SEM, optical), mechanical testing, and polymer synthesis. Experience with FDA regulatory submissions preferred but not required.
+This is a fully remote position reporting to our Director of Analysis. We offer flexible hours, professional development support, and a collaborative environment where your insights directly influence client outcomes.
 
-## Compensation & Benefits
-Salary range: $125,000 - $165,000 annually based on experience. Comprehensive benefits package including health insurance (medical, dental, vision), 401(k) matching up to 4%, 25 days PTO, and professional development budget of $3,000/year.
-
-## Location
-Cambridge, MA (on-site 4 days/week; 1 day remote negotiable)
-
----
-
-APPLY: Send resume, cover letter, and three references to careers@helixbiotech.com. Applications reviewed on rolling basis.
+Interested? Send your resume, a brief cover letter, and a portfolio link (GitHub, personal projects, or published work) to careers@geospatialsolutions.local.

@@ -1,40 +1,47 @@
 ```
-INVOICE
+RECEIPT / WORK ORDER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-From: Meridian Design Studios
-      412 Commerce Way, Suite 300
-      Portland, OR 97214
-      Contact: Maya Chen
-      Phone: (503) 555-0847
-      Email: maya.chen@meridiandesign.io
+Riverside Auto Repair & Detailing
+247 Merchant St, Unit B
+Portland, OR 97214
+Phone: (503) 555-0847
 
-Bill To: Cascadia Coffee Roasters
-         Attn: Operations Manager
-         2847 NW Industrial Avenue
-         Portland, OR 97209
-
-Invoice #: MDS-2024-03847
 Date: March 15, 2024
-Due Date: April 15, 2024
+Ref #: RS-2024-0847
 
-Description of Services:
-Brand identity refresh project for Spring 2024 product line. Includes 
-logo refinement, color palette development, and packaging design mockups 
-for client approval. Three rounds of revisions included. Additional revisions 
-billed at $150/hour.
+CUSTOMER
+Name: Patricia Chen
+Phone: 555-0192
+Vehicle: 2019 Honda Civic (Silver)
+Mileage In: 87,443 mi
 
-Partial Payment Received: $2,500.00 (March 1, 2024 - Deposit)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Amount Due: $5,875.00
+WORK COMPLETED
 
-Notes:
-- Final designs to be delivered via Dropbox link upon receipt of payment
-- Print-ready files in PDF and AI formats
-- Usage rights limited to Cascadia Coffee Roasters branding only
-- Project timeline: 4 weeks from final approval
+Oil & filter change (synthetic 5W-30)           $58.00
+Tire rotation & balance (4 wheels)              $65.00
+Brake inspection - front pads worn              $0.00
+New brake pads (front axle, OEM)                $145.00
+Coolant top-up                                  $12.00
+Air filter replacement                          $28.50
 
-Questions? Please contact Maya at the number above.
+Labor (2.5 hrs @ $65/hr)                        $162.50
 
-NO SALES TAX COLLECTED (OR-based service)
-PAYMENT METHOD: Bank transfer preferred. Wire details available upon request.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SUBTOTAL                                        $471.00
+Tax (9%)                                        $42.39
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TOTAL DUE                                       $513.39
+
+Paid: Cash                                      $513.39
+Status: PAID
+
+Notes: Customer declined wheel alignment ($89) at this time.
+Recommend alignment check at next service.
+Mileage Out: 87,451 mi
+
+Technician: Mike D.
 ```

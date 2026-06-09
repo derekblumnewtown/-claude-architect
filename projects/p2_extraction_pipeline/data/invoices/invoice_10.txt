@@ -1,62 +1,61 @@
 ```
-INVOICE
+STATEMENT OF CHARGES
+═══════════════════════════════════════════════════════════════
 
-Bill To:
-Meridian Consulting Group
-Attn: Finance Department
-Suite 400, 2847 Commerce Drive
-Denver, CO 80216
+Doc Ref: SVC-2024-4837
+Date: March 15, 2024
 
-From: Freelance Creative Services
-Contact: Maria Chen
-Phone: (555) 287-4091
-Email: maria.chen.creative@email.com
+TO:
+Meridian Logistics LLC
+Attn: Accounts Payable Department
+1240 Harbor Drive, Suite 500
+Long Beach, CA 90802
 
----
+FROM:
+StreamTech Solutions
+Contact: Marcus Wei
+Phone: (206) 555-0147
+Email: marcus.wei@streamtech.local
 
-Project: Brand Identity Redesign - Phase 2
-Invoice Date: November 8, 2024
-Invoice #: MC-2024-1108-A
-Project Reference: MER-2024-Q4-REBRAND
+═══════════════════════════════════════════════════════════════
 
-Description of Work:
-Logo variations and color palette refinement for healthcare division rebrand. 
-Includes 6 revision rounds, stakeholder presentation materials, and brand 
-guidelines document (first draft).
+RE: Professional Services - Q1 2024 Retainer Period
 
-Hours Worked: 34.5 hours
-Rate: $85/hour
-Subtotal: $2,932.50
+Dear AP Team,
 
-EXPENSES:
-Software licenses (Adobe CC - 1 month): $84.99
-Stock photography credits: $45.00
-Consultation with color theorist: $200.00
-Total Expenses: $329.99
+Per our service agreement dated January 8, 2024, please process 
+payment for the following monthly retainer:
 
----
+Monthly IT Support & Infrastructure Monitoring     $4,250.00
+  (January 1 - March 15, 2024)
 
-SUBTOTAL: $3,262.49
-Tax Rate: 8.2% (Colorado)
-Sales Tax: $267.52
+On-site technical consultation (8 hours @ $185/hr)   $1,480.00
 
-TOTAL DUE: $3,529.01
+Emergency response callout (March 12, 2024)           $650.00
+  (After-hours network remediation, 2.5 hours)
 
----
+TOTAL AMOUNT DUE: $6,380.00
 
-PAYMENT INSTRUCTIONS:
-Preferred: Bank transfer to account ending in 7413
-Alternative: Check payable to Maria Chen, mailed to above address
+═══════════════════════════════════════════════════════════════
 
-Retainer Credit Applied: -$500.00
-Amount Due After Credit: $3,029.01
+Payment Address:
+StreamTech Solutions
+P.O. Box 7412
+Seattle, WA 98109
 
----
+Bank Details Available Upon Request
 
-Notes:
-- Final brand guidelines document delivery pending client feedback (expected by Nov 15)
-- Additional revision rounds beyond 6 will be billed at $85/hour
-- Invoice payment expected within 30 days of receipt
+All invoices due within 30 days of receipt.
+No tax applies to B2B service contracts in WA state.
+Any disputes must be raised within 10 calendar days.
 
-No explicit payment deadline specified beyond standard terms.
+Please confirm receipt and include reference SVC-2024-4837 
+with your payment.
+
+Thank you,
+
+[Authorized by: M. Wei]
+Marcus Wei
+Senior Account Manager
+StreamTech Solutions
 ```

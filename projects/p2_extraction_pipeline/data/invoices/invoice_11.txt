@@ -1,52 +1,45 @@
 ```
-INVOICE
+RECEIPT / WORK ORDER
+═══════════════════════════════════════════════════════════════
 
-Bill To:
-Morrison & Associates Consulting
-Attn: Finance Department
-2847 Ridgemont Ave
-Portland, OR 97214
+Northside Auto Detailing
+"We make your car shine like new"
+Located at: 2847 Commerce Blvd, Unit C
+Phone: (555) 742-8901
 
-From:
-TechFlow Solutions
-contact: james@techflow.local
-Phone: (503) 555-0187
+═══════════════════════════════════════════════════════════════
 
----
+DATE: March 15, 2024
+CUSTOMER NAME: James Mitchell
+VEHICLE: 2019 Honda Civic (Silver) - License: KTM 447
 
-Invoice #: INV-2024-8847
-Date: March 15, 2024
-Due Date: NET 45
+───────────────────────────────────────────────────────────────
 
-Description of Work/Services:
+SERVICES PROVIDED:
 
-Q1 Quarterly Software License & Support Package
-- Platform hosting (3 months)                    $4,200.00
-- Priority support tier (unlimited tickets)     $1,800.00
-- Custom API integration consultation (24hrs)   $2,400.00
-- Database optimization & cleanup               $  950.00
-- Emergency patch deployment (Feb incident)     $  600.00
+Exterior Hand Wash (including wheels/tires)     $35.00
+Interior Vacuum & Carpet Shampoo                $40.00
+Leather Seat Conditioning                       $25.00
+Bug & Tar Removal (front bumper)                $15.00
+Wax Application (single coat)                   $20.00
+Window Cleaning (interior & exterior)          $10.00
+Air Freshener (complimentary - pine scent)      $0.00
 
-Subtotal:                                        $9,950.00
+───────────────────────────────────────────────────────────────
 
-Discount (10% loyalty):                         -$  995.00
+SUBTOTAL:                                      $145.00
+DISCOUNT (loyalty - 10%):                       -$14.50
 
-                                                ----------
-TOTAL DUE:                                       $8,955.00
+TOTAL DUE:                                     $130.50
 
----
+═══════════════════════════════════════════════════════════════
 
-Notes:
-- Support package renews automatically 4/15/24
-- API consultation hours: 16 used of 24 allocated
-- Remaining 8 hours rollover to Q2
-- Emergency patch was covered under support but itemized per your request
+PAYMENT METHOD: Cash
+AMOUNT PAID: $140.00
+CHANGE: $9.50
 
-Payment Method: ACH preferred (routing info on file)
-              OR check to: TechFlow Solutions, PO Box 4421, Portland OR 97209
+NOTES: Customer mentioned small scratch on driver's door - 
+referred to body shop. Next detailing suggested in 2-3 months.
 
-Contact for questions: james@techflow.local
-
-[no tax ID listed]
-[no explicit payment terms beyond Due Date]
+Attendant: Marcus T.
 ```

@@ -1,63 +1,50 @@
-# SENIOR GROWTH OPERATIONS STRATEGIST
+# Senior Content Strategist – Healthcare Technology
 
-**Company:** Momentum Labs (Series B SaaS)
-**Location:** Remote (US-based preferred, willing to sponsor visa)
-**Job Type:** Full-Time, Hybrid (quarterly in-person retreats in Austin, TX)
+**Company:** Meridian Digital Health Solutions
+
+**Location:** Remote (US-based, candidates must be within EST/CST time zones)
+
+**Employment Type:** Full-Time, Exempt
 
 ---
 
 ## About Us
 
-Momentum Labs builds workflow automation software for mid-market professional services firms. We've grown 240% YoY and just closed our Series B. Our team is distributed across 12 countries, but we maintain a strong culture of async-first collaboration with intentional synchronous moments.
+Meridian Digital Health Solutions develops cloud-based patient engagement platforms for regional hospital networks and independent practices. We're a Series B startup with 85 employees across multiple states, and we're looking for someone who can elevate how we communicate with both clinical and administrative audiences.
 
 ## The Role
 
-You'll own the intersection of revenue operations, data analytics, and process optimization. This isn't a traditional ops role—you'll be part strategy consultant, part data scientist, part process engineer. Reporting to our VP of Revenue, you'll work cross-functionally with Sales, Customer Success, Finance, and Product to identify growth bottlenecks and implement systems-level solutions.
+You'll own the content strategy across our product platform, customer-facing website, educational resources, and emerging channels. This isn't a writing role—it's about defining *what* we say, *to whom*, and *when*. You'll partner with product, marketing, design, and clinical teams to ensure consistency while adapting messaging for different buyer personas and use cases.
 
-**Key Responsibilities:**
-- Design and maintain dashboards that tell the story of our business (we use Looker, but open to other tools)
-- Conduct deep-dive analyses of sales cycle, conversion rates, and expansion revenue patterns
-- Build forecasting models and scenario planning frameworks
-- Implement or optimize our CRM/billing system stack (currently Salesforce + Zuora)
-- Run experiments and A/B tests on go-to-market approaches
-- Create playbooks and documentation that scale our processes without adding headcount
+Your day-to-day involves content audits, competitive analysis, voice and tone documentation, user research interpretation, developing content calendars, and mentoring our junior content creator (hired recently). You'll also own documentation strategy for our compliance and regulatory needs, which is uniquely important in healthcare tech.
 
-## Requirements
+We expect you to understand healthcare workflows, regulatory language, and the gap between how providers actually work and how software vendors talk about them.
 
-**Must Have:**
-- 5-7 years experience in revenue operations, business analytics, or growth strategy roles
-- SQL proficiency (comfortable writing moderately complex queries)
-- Experience with Salesforce OR similar CRM platforms
-- Strong statistical thinking (you understand p-values, confidence intervals, and how to avoid common data traps)
-- Excellent communication skills—you synthesize complex data into actionable insights for non-technical stakeholders
+## Who You Are
 
-**Nice to Have:**
-- Python or R for data analysis
-- Exposure to SaaS metrics and unit economics
-- Familiarity with tools like dbt, Amplitude, or Mixpanel
-- Experience with subscription billing models
-- Background in management consulting
+- You've spent 4+ years in content strategy, preferably in B2B SaaS, healthcare, fintech, or regulated industries
+- You're comfortable with ambiguity and can define structure where none exists
+- You have demonstrable experience conducting stakeholder interviews and translating findings into content frameworks
+- You're familiar with SEO basics and analytics (Google Analytics, at minimum)
+- You've managed cross-functional projects and can diplomatically push back on requests
+- You write clearly and quickly; you can produce everything from 1,000-word thought leadership pieces to microcopy
+- You understand HIPAA concepts at a functional level (not necessarily compliance expertise, but enough to ask the right questions)
 
-## Compensation & Benefits
+## What You Won't Do
 
-**Salary Range:** $145,000 - $185,000 (based on experience)
-**Equity:** 0.15% - 0.35% options pool
-**Benefits Package:** 
-- Comprehensive health/dental/vision (100% premium coverage for employee)
-- 6 weeks PTO + unlimited sick days + 1 week sabbatical at 5 years
-- $2,500/year professional development budget
-- Home office setup stipend ($1,500)
-- Mental health stipend ($200/month for therapy/coaching)
-- Parental leave (16 weeks primary, 12 weeks secondary, fully paid)
+We're not looking for someone to manage social media full-time, design graphics, or own the entire marketing funnel. You won't be a copywriter taking dictation from executives. This is strategy-first.
+
+## What We Offer
+
+- $92,000–$118,000 annually (based on background and experience)
+- Health, dental, vision insurance (company covers 85% of premiums)
+- 401(k) with 3% company match
+- Unlimited PTO (genuine, tracked in aggregate only)
+- $2,000 annual professional development budget
+- Occasional travel for customer research and team offsites (2–3 times per year)
 
 ## How to Apply
 
-Please submit: resume, cover letter addressing specifically how you'd approach our current growth challenge (we'll brief you on that), and 2-3 examples of analyses or projects you're proud of.
+Send a resume, brief cover letter, and a single example of content strategy work (can be an anonymized case study, framework, audit, or portfolio piece) to hiring@meridiandigitalhealth.com. Include "Content Strategy – [Your Name]" in the subject line.
 
-**To Apply:** careers@momentumlabs.io
-
-**Application Deadline:** Rolling until filled
-
----
-
-*Momentum Labs is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. We do not discriminate on the basis of race, color, religion, sex, national origin, age, disability, or any other protected characteristic.*
+We review applications on a rolling basis. We're targeting a start date of April 2025.

@@ -1,44 +1,42 @@
-# Senior Materials Scientist - Advanced Polymers Division
+# Senior Fermentation Scientist - Biotech
 
-**Company:** Nexus Advanced Materials Corp
-**Location:** Wilmington, DE 19801
-**Employment Type:** Full-Time, Hybrid (3 days on-site)
-**Posted:** March 15, 2024
+**Company:** Meridian Biosciences Inc.
 
-## About Us
+**Location:** Cincinnati, OH (hybrid, 2 days onsite required)
 
-Nexus Advanced Materials Corp specializes in developing next-generation polymer compounds for aerospace, automotive, and medical device applications. We've been at the forefront of materials innovation for over 25 years, with R&D facilities across North America and Europe.
-
-## Position Overview
-
-We're seeking a Senior Materials Scientist to lead our polymer characterization and development initiatives. This role sits at the intersection of theoretical materials science and practical industrial application, requiring someone comfortable both in the lab and in cross-functional meetings with engineering teams.
-
-## Key Responsibilities
-
-- Design and execute experiments to evaluate mechanical, thermal, and chemical properties of novel polymer formulations
-- Develop standard operating procedures for material testing protocols and maintain compliance with ASTM and ISO standards
-- Mentor 2-3 junior scientists and oversee their project timelines and deliverables
-- Collaborate with process engineering to transition lab-scale discoveries into pilot production
-- Present findings to stakeholders including clients in defense and medical sectors
-- Contribute to 2-3 peer-reviewed publications annually
-- Identify emerging material trends and competitive threats in the polymers space
-
-## Required Qualifications
-
-PhD in Materials Science, Chemical Engineering, or related field. Minimum 8 years post-doctoral experience in polymer characterization or development. Proficiency with DSC, TGA, FTIR, and mechanical testing equipment. Experience writing technical reports and presenting to non-technical audiences. Comfortable with basic statistics and data analysis in Excel or Python.
-
-## Preferred Qualifications
-
-Published research in polymer blends or composites. Experience with regulatory submissions (FDA, FAA, or automotive standards). Familiarity with injection molding or extrusion processes. Project management certification or equivalent demonstrated experience. Background in sustainable/bio-based materials development.
-
-## Compensation & Benefits
-
-Salary range: $145,000 - $175,000 based on experience. Comprehensive health, dental, and vision insurance. 401(k) matching up to 6%. Professional development budget of $5,000 annually. Flexible work arrangements and parental leave (16 weeks primary caregiver). On-site fitness center and subsidized cafeteria.
-
-## Application Instructions
-
-Submit resume, cover letter, and list of 3 professional references to careers@nexusadv.com. Please include a brief statement (200 words max) on your most impactful materials research project. Applications reviewed on rolling basis; position open until filled.
+**Job ID:** MB-2024-0847
 
 ---
 
-**Equal Opportunity Statement:** Nexus Advanced Materials Corp is committed to building a diverse workforce and provides equal employment opportunities to all applicants regardless of race, color, religion, gender, gender identity, sexual orientation, national origin, disability status, or protected veteran status.
+We're seeking a Senior Fermentation Scientist to join our Bioprocess Development team. This is a unique opportunity to work at the intersection of classical microbiology and cutting-edge synthetic biology, supporting our portfolio of diagnostic and therapeutic biologics.
+
+You'll be responsible for designing and optimizing fed-batch and perfusion fermentation processes for mammalian cell lines and microbial systems. Your typical week might involve troubleshooting a scale-up issue in our 500L bioreactor suite, writing SOPs for a new strain, mentoring junior scientists, and presenting findings at our monthly process review. This role reports directly to the Director of Bioprocess Engineering.
+
+**Core Responsibilities:**
+- Develop and scale fermentation processes from bench to manufacturing (up to 2000L)
+- Conduct design-of-experiments (DoE) for media optimization, temperature, aeration, and agitation parameters
+- Collaborate with analytical chemistry and quality assurance on process characterization
+- Lead cross-functional projects with commercial operations and regulatory affairs
+- Write technical reports and prepare content for regulatory submissions (IND/BLA)
+- Train and supervise 1-2 biotech associates
+
+**Required Qualifications:**
+- PhD in Bioengineering, Chemical Engineering, Microbiology, or related field (or MS + 5 years industry experience in fermentation/bioprocessing)
+- Hands-on experience with mammalian cell culture (CHO, HEK, Vero) or microbial fermentation (E. coli, yeast, insect cells)
+- Proficiency with bioreactor control systems and data acquisition software
+- Working knowledge of FDA regulations (21 CFR Part 11) and cGMP principles
+- Strong statistical analysis and data interpretation skills
+
+**Preferred Qualifications:**
+- Experience with continuous bioprocessing or ATF/perfusion systems
+- Familiarity with single-use bioreactor technology
+- Background in vaccine or monoclonal antibody manufacturing
+- Experience mentoring junior scientists or leading process development teams
+
+We don't require a specific location zip code, but you should be within reasonable commuting distance of Cincinnati or willing to relocate. Flexible arrangements available for candidates with exceptional expertise.
+
+**Compensation & Benefits:** Competitive salary commensurate with experience (we've budgeted $95K–$140K depending on background). Comprehensive benefits include medical/dental/vision, 401(k) match, tuition reimbursement, and access to our state-of-the-art biomanufacturing facility for professional development.
+
+**Why Join Us:** You'll work on products that matter—our diagnostics reach underserved populations globally, and our pipeline includes biologics addressing serious unmet medical needs. Our bioprocessing team is collaborative, intellectually rigorous, and genuinely interested in advancing the science.
+
+**To Apply:** Submit resume, cover letter, and names of 2 references to bioprocess-careers@meridianbiosciences.com. Applications reviewed on a rolling basis. This posting will remain open until the position is filled.

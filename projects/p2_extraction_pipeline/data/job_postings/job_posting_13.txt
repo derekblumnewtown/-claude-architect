@@ -1,59 +1,29 @@
-# SENIOR MANUFACTURING ENGINEER - ADDITIVE MANUFACTURING
+MARKETING OPERATIONS COORDINATOR
+SyncWave Technologies
 
-**Company:** Precision Dynamics Corp
-**Location:** Salt Lake City, UT (Hybrid - 3 days on-site)
-**Job Type:** Full-Time, Permanent
-**Posted:** November 14, 2024
+About Us
+SyncWave Technologies is a mid-stage B2B SaaS company specializing in workflow automation for financial services. We're growing fast and looking for someone to help us scale our marketing infrastructure without losing our scrappy startup culture.
 
----
+The Role
+You'll be the glue holding our marketing tech stack together. We're not looking for someone who just knows Salesforce or HubSpot—we need someone who can think critically about why our processes exist, spot inefficiencies, and actually fix them. Your days will involve setting up marketing automation workflows, managing our CRM database hygiene, coordinating between sales and marketing (they don't always get along), troubleshooting integrations between tools, and occasionally doing some light campaign setup and analytics. This role reports to our VP of Marketing and sits in a weird middle space—part operations, part product, part customer success. We like it that way.
 
-## Position Overview
+What You'll Need
+- Experience with HubSpot, Marketo, or similar platforms (doesn't need to be years, but real hands-on work)
+- Comfort with Zapier, Make, or other no-code automation tools
+- Ability to write SQL queries or willingness to learn (we use Postgres)
+- Strong communication skills—you'll interface with sales, marketing, product, and finance teams regularly
+- Obsessive attention to detail, especially with data
+- Some exposure to Google Analytics or similar tools
 
-Precision Dynamics Corp is seeking a Senior Manufacturing Engineer specializing in additive manufacturing (3D printing) technologies to lead process optimization and quality assurance initiatives across our aerospace and medical device divisions. This is a hands-on technical leadership role reporting directly to the VP of Manufacturing Operations.
+Nice-to-haves: Freshworks, Segment, experience with Salesforce configuration, knowledge of financial services industry, background in customer success operations
 
-## Primary Responsibilities
+Location
+Remote (US-based only; we're Eastern and Pacific time zones primarily). We have a small office in Portland, OR if you're ever in the area.
 
-- Design and implement AM production workflows for complex metal and polymer components
-- Conduct failure analysis and root cause investigation on printed parts; develop corrective actions
-- Collaborate with design engineering to optimize part geometry for manufacturability via AM processes
-- Manage relationships with equipment vendors (SLM, DMLS, FDM systems) and material suppliers
-- Train and mentor 2-3 junior manufacturing technicians
-- Lead continuous improvement projects targeting cost reduction and cycle time
-- Maintain compliance with ISO 13485, AS9100C, and proprietary quality standards
-- Participate in new equipment evaluation and qualification
+Compensation & Details
+$62,000–$74,000 annually, depending on experience. Health/dental/vision insurance, 401k match (3%), professional development budget, unlimited PTO (yes, really—we track it and it averages 18 days), and access to our Slack channel dedicated entirely to GIF sharing.
 
-## Required Qualifications
+This is a full-time, permanent role. We're hiring to start ASAP but can wait for the right person. Background check required.
 
-- 8+ years manufacturing engineering experience, minimum 4 years with additive manufacturing technologies
-- Proficiency with CAD software (Fusion 360, SolidWorks, or similar)
-- Experience with process parameters: laser power, scan speed, layer height, support structure design
-- Strong knowledge of post-processing (heat treatment, machining, surface finishing) for AM components
-- Familiarity with design of experiments (DOE) and statistical process control (SPC)
-- Bachelor's degree in Mechanical Engineering, Manufacturing Engineering, or equivalent professional experience
-- Excellent written and verbal communication skills
-
-## Preferred Qualifications
-
-- Certification in additive manufacturing (ASTM, ISO standards)
-- Experience with Materialise or similar AM software platforms
-- Background in aerospace or medical device manufacturing
-- Lean Six Sigma Green Belt or higher
-- Patent or publication record in AM technology
-
-## Compensation & Benefits
-
-- **Salary Range:** $95,000 - $125,000 annually (based on experience)
-- Comprehensive health, dental, and vision coverage (company pays 85% of premiums)
-- 401(k) matching up to 6%
-- Annual performance bonus (15-25% of base)
-- Tuition reimbursement program
-- 4 weeks PTO + 10 company holidays
-- On-site gym and subsidized cafeteria
-
-## Work Environment
-
-Monday-Wednesday on-site; Thursday-Friday remote or flexible scheduling. Lab coat and safety footwear required. Exposure to powder-based materials; OSHA safety compliance mandatory. Occasional travel (5-10%) for vendor meetings and training.
-
----
-
-**To Apply:** Submit resume, cover letter, and portfolio of past AM projects to manufacturing-careers@precisiondynamics.local. Applications reviewed on rolling basis. Equal Opportunity Employer.
+How to Apply
+Email your resume and a brief note about a time you fixed something broken in a marketing system (or broke something and had to fix it) to careers@syncwave.io. Please include your timezone. No cover letters needed, but we read everything you send.

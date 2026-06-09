@@ -1,66 +1,23 @@
-# POSITION POSTING
+WAREHOUSE OPERATIONS COORDINATOR
+Acme Logistics Solutions
 
-**Title:** Aquaculture Systems Technician
+Acme Logistics Solutions is seeking a Warehouse Operations Coordinator to join our rapidly expanding distribution center in the greater Phoenix metropolitan area. This is a unique hybrid role that doesn't fit neatly into traditional warehouse or administrative categories—we need someone who can move fluidly between forklift operations, inventory management systems, and stakeholder communication.
 
-**Company:** BlueTide Sustainable Fisheries
-**Location:** Humboldt County, CA (Remote work available 60%)
-**Employment Type:** Full-Time, Contract-to-Hire (18-month initial term)
-**Posted:** March 15, 2024
+The successful candidate will spend approximately 40% of their time on the warehouse floor managing SKU organization and coordinating with drivers, 35% in our operations office handling database updates and reporting, and 25% participating in continuous improvement initiatives and process documentation. You'll report directly to the Operations Manager and collaborate with cross-functional teams including procurement, quality assurance, and customer service.
 
----
+Key Responsibilities:
+• Monitor real-time inventory levels using our SAP system and reconcile discrepancies
+• Operate Class B forklift and pallet jack equipment safely and efficiently
+• Create daily pick/pack schedules and troubleshoot workflow bottlenecks
+• Conduct monthly cycle counts and maintain documentation for audit purposes
+• Train new warehouse staff on safety protocols and standard operating procedures
+• Identify process inefficiencies and present recommendations to leadership
 
-## ABOUT THE ROLE
+Required Qualifications:
+Forklift certification (or willingness to obtain within 30 days), proficiency with Microsoft Excel and email systems, ability to lift 50 lbs regularly, valid driver's license, high school diploma or GED. We're looking for someone with logistics or warehouse experience, though we'll consider strong administrative professionals willing to learn warehouse operations.
 
-We're seeking an Aquaculture Systems Technician to join our innovative team managing recirculating aquaculture systems (RAS) for sustainable fish farming operations. This is a unique hybrid position combining hands-on technical maintenance with data monitoring and environmental compliance documentation.
+Preferred: 2-3 years in warehouse/logistics, familiarity with WMS software, bilingual (English/Spanish).
 
-Your responsibilities will include:
+Compensation: $38,000-$42,000 annually, health insurance after 60 days, 401k match at 3%, paid time off.
 
-- Daily monitoring and calibration of water quality parameters (pH, dissolved oxygen, ammonia, nitrite, salinity)
-- Maintenance of mechanical and biological filtration systems, including biofilm reactors and settling tanks
-- Equipment troubleshooting and preventive maintenance scheduling for pumps, aerators, and control systems
-- Collection of water samples and input of environmental data into our custom tracking platform
-- Collaboration with the hatchery team on larval rearing protocols
-- Weekly reports on system performance and anomalies
-- On-call support rotation (1 week per month, including weekends)
-
-## QUALIFICATIONS
-
-**Required:**
-- 3-5 years experience in aquaculture, marine biology, or similar technical field
-- Strong understanding of RAS principles and fish biology
-- Proficiency with water quality testing equipment and basic chemistry
-- Mechanical aptitude and comfort working with pumps, filters, and plumbing systems
-- Ability to lift 50 lbs regularly and work in wet environments
-- Valid driver's license
-
-**Preferred:**
-- Experience with tilapia or other warm-water species cultivation
-- Familiarity with SCADA systems or automated monitoring platforms
-- Certification in aquaculture (IACANZ or similar)
-- Experience with environmental permitting processes
-
-## COMPENSATION & BENEFITS
-
-$52,000 - $68,000 annually (based on experience)
-- Health, dental, vision insurance (employer covers 85%)
-- 401(k) with 3% match
-- 20 days PTO + 6 company holidays
-- Professional development stipend ($1,200/year)
-- Access to on-site gym facility
-- Parking provided; carpool incentives available
-
-## LOCATION NOTES
-
-Primary work at our facility near Fortuna, CA. Remote work (60%) available after 90-day onboarding period. Position requires occasional travel to our secondary facility in Arcata (15 minutes away). Note: We do not have a zip code listed for our new expansion site — candidates should confirm commute feasibility.
-
-## APPLICATION DETAILS
-
-Please submit: Resume, cover letter, and names of two professional references.
-
-**Contact:** careers@bluetidesustainable.com
-**Application Deadline:** April 30, 2024
-**Interview Format:** Phone screening, then on-site technical assessment at facility
-
----
-
-*BlueTide Sustainable Fisheries is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.*
+Location: Phoenix, AZ (no specific zip code provided by employer)

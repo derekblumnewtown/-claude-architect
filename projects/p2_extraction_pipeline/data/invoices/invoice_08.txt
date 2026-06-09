@@ -1,51 +1,53 @@
 ```
-INVOICE
+STATEMENT OF CHARGES
+═════════════════════════════════════════════════════════════════
 
-Bill To:
-Marcus Chen
-Chen & Associates Marketing
-Suite 405, Meridian Tower
-San Francisco, CA 94105
+FROM:
+Northside Mobile Detailing
+415 Riverside Parkway
+Portland, OR 97204
+Contact: Marcus T.
+Phone: (503) 555-0847
 
-From:
-Creative Pulse Studios
-www.creativepulse.studio
-contact@creativepulse.studio
+BILLED TO:
+Cascade Property Management
+Attn: Fleet Services Coordinator
+3rd Floor, Commerce Center
+Portland, OR 97201
 
----
+═════════════════════════════════════════════════════════════════
 
-PROJECT: Brand Identity Redesign - Phase 2
+WORK PERFORMED: December 2024
 
-Description of Work:
-Comprehensive brand strategy consultation including competitor analysis, 
-market positioning workshop, visual identity concepts (3 rounds of revisions), 
-brand guidelines documentation, and stakeholder presentation materials.
+Service Location: 847 Westridge Drive (lot maintenance vehicles)
 
-Amount Due: $8,750.00
+DESCRIPTION                                          QUANTITY    AMOUNT
+─────────────────────────────────────────────────────────────────────
+Exterior wash + tire cleaning                           12      $840.00
+Interior vacuum + seat treatment                        12      $480.00
+Engine bay degreasing                                    8      $280.00
+Scratch repair (compound + polish) - Vehicles #3, #7    2      $175.00
+Windshield treatment (water repellent)                  12      $180.00
 
----
+MISCELLANEOUS CHARGES:
+- Additional trip for rust spot treatment (Vehicle #11)        $95.00
+- Materials markup (supplies provided)                         $42.50
 
-PAYMENT DETAILS:
-Invoice #: CP-2024-089
-Date: March 14, 2024
-Due Date: NET 30 (or upon project completion, whichever comes first)
+─────────────────────────────────────────────────────────────────────
+SUBTOTAL                                                    $2,072.50
+Sales Tax (9.0%)                                             $186.53
+─────────────────────────────────────────────────────────────────────
 
-Bank Transfer:
-Creative Pulse Studios
-Account: 4721-89-XXXXX
-Routing: 121000248
-Bank: First Interstate Bank
+TOTAL AMOUNT DUE                                          $2,259.03
 
----
+═════════════════════════════════════════════════════════════════
 
-NOTES:
-- Phase 2 delivery contingent on Phase 1 approval sign-off
-- Invoice reflects 10 billable hours at $875/hr (lead strategist rate)
-- Travel expenses for workshop facilitation ($650) included in total
-- Revisions beyond 3 rounds billed at $150/hour
-- Client contact for questions: Sarah Voss (sarah.voss@meridiantower.net)
+Payment Method: Invoice sent 1/2/25
+Account Status: Open
+Notes: Some vehicles require follow-up detailing in Q1. Vehicle #6 
+       has paint damage beyond detailing scope — recommend professional 
+       repair estimate.
 
----
-
-Thank you for your business.
+Late Fees: 1.5% monthly interest if unpaid after 30 days from service date
+Contact for questions: marcus@northsidedetail.local
 ```

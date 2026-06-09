@@ -1,40 +1,25 @@
-# POSITION POSTING
+COMMUNITY HEALTH EDUCATOR - AmeriCare Health Services
 
-**Title:** Aquaculture Systems Technician
+AmeriCare Health Services is seeking a Community Health Educator to join our Prevention & Wellness Division. This is a unique hybrid role that combines classroom instruction, one-on-one coaching, and community outreach programming.
 
-**Organization:** Cascade Marine Innovations LLC
+Position Overview
+You'll develop and deliver health education programs focused on chronic disease prevention, maternal health, and health literacy in underserved neighborhoods. Unlike traditional education roles, you'll split time between our main office (located in the Denver metro area), mobile clinics, and community partner sites throughout Colorado. There is no fixed office location — you'll work from home 2 days per week and travel to various community sites the remaining days.
 
-**Location:** Port Angeles, WA (maritime operations)
+Responsibilities
+- Create culturally responsive educational materials and curricula for diverse populations
+- Teach workshops on nutrition, diabetes management, and preventive care (8-12 participants per session)
+- Conduct individual health coaching sessions via phone and in-person
+- Partner with local nonprofits, churches, and schools to identify community needs
+- Track program attendance and collect outcome data; prepare quarterly reports
+- Occasionally present findings at state health conferences
 
----
+Required Qualifications
+Bachelor's degree in public health, nursing, health sciences, education, social work, or related field. Spanish fluency (verbal and written) is essential. Valid driver's license and reliable transportation. Strong comfort with diverse populations and ability to work independently.
 
-## Overview
+Preferred: 2-3 years in health education, community health, or patient education. Certification as a health educator (CHES) or community health worker. Experience with Salesforce or program evaluation databases.
 
-We're seeking an experienced Aquaculture Systems Technician to maintain and optimize our recirculating aquaculture system (RAS) facility. This is a hands-on role combining mechanical troubleshooting, water chemistry management, and data logging for our sustainable fish farming operation.
+Compensation & Schedule
+$42,000-$48,000 annually, depending on experience. 40 hours/week with flexible scheduling. Health insurance (medical, dental, vision), 15 PTO days, professional development stipend ($1,200/year).
 
-## Key Responsibilities
-
-- Monitor and calibrate dissolved oxygen, pH, ammonia, and nitrate levels across multiple tank systems daily
-- Perform preventive maintenance on pumps, biofilters, and UV sterilization units
-- Troubleshoot system failures and implement corrective actions with minimal downtime
-- Maintain detailed records of water parameters and fish health observations
-- Coordinate with hatchery and grow-out managers on stocking densities and feeding protocols
-- Occasional on-call availability for emergency system failures (comp time provided)
-
-## Required Qualifications
-
-5+ years working with recirculating systems OR equivalent aquaculture facility experience. Proficiency with SCADA software preferred. Valid driver's license. Comfortable working in wet conditions and at heights.
-
-## Nice to Have
-
-- Welding certification
-- Knowledge of commercial fish species biology
-- Certification in aquatic facility management
-
-## Compensation
-
-$19.50–$23.75 hourly depending on experience. Health insurance after 90 days. 401(k) matching up to 3%.
-
-## Application Instructions
-
-Submit resume and references to careers@cascademarineinn.org. Applications reviewed rolling basis until filled.
+To Apply
+Submit resume, cover letter, and brief writing sample (2 pages max) to careers@americarehealth.org. Position available immediately.

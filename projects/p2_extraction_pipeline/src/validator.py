@@ -66,7 +66,6 @@ class Validator:
         #Loop though the required fields
         for schema_element in self.schemas[document_type]["required"]:
 
-
                 if schema_element not in extracted_data:
                     errors.append({"field":schema_element, 
                                    "type":"format", 

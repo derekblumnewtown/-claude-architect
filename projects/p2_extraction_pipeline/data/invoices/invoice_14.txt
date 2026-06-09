@@ -1,55 +1,54 @@
 ```
-INVOICE
+REPAIR SERVICE RECEIPT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-From: Meridian Creative Solutions
-      Suite 404, Riverside Business Park
-      Portland, OR 97204
-      Contact: Marco J. / marco@meridian-creative.net
+Date: March 18, 2024
+Reference: RS-20240318-847
 
-Bill To: Thompson & Associates Law Firm
-         Attn: Accounts Payable
-         1847 Commerce Avenue
-         Portland, OR 97214
+FROM:
+Northside Auto Electrical
+412 Commerce Drive, Unit B
+Springfield, IL 62701
+License: IL-AUTO-4521
 
-Invoice #: MCS-2024-8847
-Date: November 8, 2024
-Due: Net 30
+CUSTOMER:
+Mr. James Chen
+(Walk-in / No contact info provided)
 
-─────────────────────────────────────────────────────────
+VEHICLE INFO:
+2019 Honda Civic (Gray)
+License Plate: [PARTIALLY OBSCURED IN HANDWRITING]
+Mileage: ~127,400 mi
 
-DESCRIPTION OF SERVICES:
+WORK PERFORMED:
+- Alternator replacement (remanufactured unit)         $185.00
+- Labor (3.2 hrs @ $55/hr)                            $176.00
+- Battery testing & cleaning terminals                 $0.00
+- Serpentine belt replacement                          $48.50
+- Parts disposal fee                                   $15.00
 
-Brand identity refresh consultation (3 sessions @ $250/hr)
-  Design concepts (initial round) - 12 hours          $3,000.00
-  Revisions and refinements                           $1,850.00
-  Logo file delivery (all formats)                      $400.00
-  Brand guidelines documentation                        $650.00
+SUBTOTAL:                                             $424.50
 
-Materials & Production:
-  Premium business cards (1000 units, printed)          $285.00
-  Letterhead stock (500 sheets)                         $175.00
-  Digital asset licensing                               $200.00
+Materials markup (18%):                                $76.41
 
-─────────────────────────────────────────────────────────
+SUBTOTAL BEFORE TAX:                                  $500.91
 
-Subtotal                                              $6,560.00
-Oregon Sales Tax (0% - Professional Services)             $0.00
-                                                    ──────────
-TOTAL DUE                                             $6,560.00
+Sales Tax (6.25%):                                     $31.31
 
-─────────────────────────────────────────────────────────
+TOTAL DUE:                                            $532.22
 
-Payment Methods:
-• ACH Transfer: Account details on file
-• Check: Payable to Meridian Creative Solutions
-• Credit Card: 3% processing fee applies
+Payment received: CASH
+Time in: 1:15 PM
+Time out: 4:45 PM
 
-Notes:
-Files transferred via secure cloud link on 11/7.
-Usage rights: Single entity, perpetual license.
-Invoiced work completed as of 11/8/2024.
+Notes: Customer stated alternator was making noise. 
+Serpentine belt also worn. Original battery tested OK but 
+corroded. Recommended replacement but customer declined.
+Work guaranteed 12 months parts, labor at discretion.
 
-Questions? Reply to this email or call 503-555-0142 ext. 14
+Technician: Marcus (signature illegible)
+Manager approval: [BLANK]
 
-Thank you for your business!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Thank you for your business. No receipt copy provided to customer.
 ```

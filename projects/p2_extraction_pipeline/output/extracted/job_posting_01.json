@@ -1,0 +1,33 @@
+{
+  "company_name": "Beachtree Manufacturing LLC",
+  "role": "Production Scheduling Coordinator",
+  "city": "Tacoma",
+  "state": "WA",
+  "zip": "98402",
+  "job_type": "Full-time",
+  "salary": {
+    "salary_min": 48000,
+    "salary_max": 55000
+  },
+  "skills": [
+    {
+      "skill": "ERP systems",
+      "years": 0
+    },
+    {
+      "skill": "Spreadsheet skills",
+      "years": 0
+    },
+    {
+      "skill": "Production scheduling",
+      "years": 2
+    },
+    {
+      "skill": "Manufacturing operations",
+      "years": 2
+    },
+    {
+      "skill": "Communication"
+    }
+  ]
+}

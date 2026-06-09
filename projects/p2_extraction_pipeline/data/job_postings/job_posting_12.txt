@@ -1,64 +1,46 @@
-# Senior Biostatistician - Clinical Research
+# Senior Environmental Compliance Officer
 
-**Position Type:** Full-Time, Contract-to-Hire (18-24 months potential conversion)
+## Company
+Riverside Chemical Manufacturing Inc. — A family-owned specialty chemicals producer established in 1987, serving pharmaceutical, agricultural, and industrial markets across North America.
 
----
+## Location
+Baton Rouge, LA (some remote flexibility for documentation and reporting)
 
-## About the Role
-
-We're seeking an experienced biostatistician to join our contract research organization's growing statistical sciences team. This is a unique hybrid position that bridges clinical operations and data analytics, requiring someone who can move fluidly between protocol design consultation, interim analysis execution, and regulatory submission support.
-
-Your typical week won't look the same twice. One day you're advising a study team on sample size calculations for a Phase IIb oncology trial. The next, you're troubleshooting data quality issues with site coordinators in three time zones. The week after, you're presenting findings to an FDA panel.
-
-**Compensation:** $95,000 - $135,000 annually, based on experience and credentials. We also offer flexible work arrangements (2-3 days on-site in our Boston location), comprehensive health coverage, CME allowance ($3,500/year), and professional society membership support.
-
----
-
-## Key Responsibilities
-
-- Design statistical analysis plans (SAPs) and statistical sections of clinical trial protocols for Phase I-IV studies across multiple therapeutic areas
-- Perform interim efficacy and safety analyses; prepare Data Safety Monitoring Board packages
-- Execute sensitivity analyses and subgroup evaluations; document assumptions and limitations clearly
-- Mentor junior statistical programmers and coordinate with biostatisticians at other contract sites
-- Maintain SAS/R programming documentation; participate in validation and QA processes
-- Interface directly with clients (pharma sponsors) on statistical methodology questions—communication skills matter as much as statistical rigor here
-
----
-
-## Required Experience & Skills
-
-- 5-8 years biostatistics experience in pharmaceutical development, academic medical centers, or CRO environment
-- Strong SAS programming (PROC SQL, PROC MEANS, macro development minimum); R knowledge is valuable
-- Demonstrated experience with clinical trial design and analysis (ICH-GCP familiarity expected)
-- Master's degree in Biostatistics, Statistics, or related quantitative field
-- Advanced knowledge of survival analysis, longitudinal data methods, and missing data approaches
-- FDA/EMA regulatory submission experience (e.g., CTD modules, statistical reviewer interactions)
-
-**Nice-to-Have Skills:** Experience with adaptive trial design, Bayesian methods, CDISC standards (SDTM/ADaM), SAS Enterprise Guide, Python for data wrangling.
+## Position Type
+Full-time, Exempt
 
 ---
 
 ## About Us
 
-Founded in 2009, [Company Name] conducts late-phase clinical trials for mid-sized biotech and emerging pharma sponsors who lack in-house statistical infrastructure. Our 120-person team operates from Boston with distributed remote staff. We're known for meticulous attention to detail and honest conversations about what the data actually shows—not what sponsors hope it shows.
+Riverside Chemical has operated responsibly in the petrochemical corridor for over three decades. We pride ourselves on exceeding regulatory standards and maintaining transparent relationships with our communities and governing bodies. This role is critical to our continued growth and our commitment to environmental stewardship.
 
-We're independently owned and have never taken venture capital, which means we reinvest profits directly into employee development and technology.
+## The Role
 
----
+We seek a Senior Environmental Compliance Officer to lead our environmental management systems, ensure regulatory adherence, and drive continuous improvement initiatives. You'll report directly to our VP of Operations and manage a small team of compliance technicians while interfacing with state and federal agencies, internal departments, and external consultants.
 
-## Logistics
+Your responsibilities will include: developing and implementing environmental policies; conducting internal audits and compliance assessments; managing permits and reporting obligations under Clean Air Act, Clean Water Act, RCRA, and Louisiana-specific regulations; responding to inspections; tracking and remediating violations; maintaining environmental documentation; and mentoring junior staff. You'll also champion our ISO 14001 certification renewal and identify cost-effective compliance solutions.
 
-- **Location:** Primary office in Boston, MA (02115). Remote work negotiable for right candidate.
-- **Start Date:** ASAP, ideally within 6 weeks
-- **Travel:** ~10% (client site visits, regulatory meetings; all expenses covered)
-- **Visa Sponsorship:** Not available at this time; candidate must be authorized to work in the U.S.
+## Required Qualifications
 
----
+- Bachelor's degree in Environmental Science, Engineering, Chemistry, or related field
+- 7+ years of environmental compliance experience in manufacturing or heavy industry
+- Demonstrated knowledge of federal and state environmental regulations
+- Experience with environmental management systems and audit processes
+- Strong written and verbal communication skills
+- Ability to work independently and lead cross-functional teams
 
-## Application Instructions
+## Preferred Qualifications
 
-Submit a resume, cover letter addressing your most complex statistical analysis challenge, and three professional references to: **careers@[company].com** with subject line "Biostatistician - [Your Name]"
+- Professional Engineer (PE) license or Environmental Professional (EP) certification
+- Experience with air quality permitting or wastewater discharge permits
+- Familiarity with environmental databases and monitoring software
+- Track record of successful regulatory inspections
 
-We review applications on a rolling basis. Interviews begin immediately upon receipt of complete applications.
+## Compensation & Benefits
 
-**Equal Opportunity Statement:** We're committed to building a statistically diverse team (pun intended). We actively encourage applications from underrepresented groups in quantitative sciences and provide reasonable accommodations for all candidates.
+Salary is commensurate with experience; we anticipate $72,000–$89,000 for well-qualified candidates. We offer comprehensive health insurance, 401(k) matching, professional development support, flexible scheduling, and a collaborative work environment.
+
+## How to Apply
+
+Email resume, cover letter, and three professional references to careers@riversidechem.com. Subject line: "SECO – [Your Name]"

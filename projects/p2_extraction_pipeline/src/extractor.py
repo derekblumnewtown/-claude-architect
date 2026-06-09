@@ -31,7 +31,36 @@ class Extractor:
                     "content":f"Extract all data from this document:\n\n{document_text}"
                 }]
             )
+        print(response)
+        print(" ")
+
         for block in response.content:
             if block.type=="tool_use":
                 return block.input
+
+
+
+    def extract_with_feedback(self, document_text, document_type, errors):
         
+        error_summary = "\n".join([f"- {e['field']}: {e['error']}" for e in errors])
+
+        response = self.client.messages.create(
+                model=config.default_model,
+                max_tokens=1024,
+                tools=[{
+                    "name": f"extract_{document_type}",
+                    "description":f"Extract structured data from a {document_type}",
+                    "input_schema": self.schemas[document_type]
+                }],
+                tool_choice={"type":"tool",
+                            "name":f"extract_{document_type}"},
+                messages=[{ 
+                    "role":"user",
+                    "content": f"Extract all data from this document. Previous extraction had errors:\n{error_summary}\nPlease fix these issues.\n\n{document_text}"
+                }]
+            )
+        print(response)
+        print(" ")
+        for block in response.content:
+            if block.type=="tool_use":
+                return block.input

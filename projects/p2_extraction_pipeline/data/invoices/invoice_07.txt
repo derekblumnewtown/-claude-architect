@@ -1,54 +1,51 @@
 ```
-INVOICE
+RECEIPT / WORK ORDER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-From: Riverside Landscaping & Design
-       142 Oak Ridge Drive
-       Portland, OR 97214
-       Phone: (503) 555-0847
-       License #: OR-LAND-4421
+Date: March 15, 2024
+Reference: WO-2024-847-B
 
-Bill To: Morrison Family Trust
-         c/o Patricia Morrison
-         8847 Westbrook Avenue
-         Portland, OR 97215
+FROM:
+Riverside Plumbing & Drain Services
+License #PL-4521
+Call: (503) 555-0187
 
-Invoice #: RS-2024-891
-Date: March 18, 2024
-Due: NET 30
+TO:
+Margaret Chen
+847 Willow Ridge Drive
+Portland, OR 97214
 
-Description of Work:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Spring cleanup and mulch installation - front beds
-  - Labor (8 hrs @ $65/hr): 520.00
-  - Mulch material (12 cubic yards): 384.00
+DESCRIPTION OF WORK PERFORMED:
 
-Removal of dead oak tree near property line
-  - Tree removal & stump grinding: 1,200.00
-  - Debris hauling: 180.00
+Service call - Kitchen sink backup diagnosis & repair
+  - Removed kitchen P-trap and cleaned blockage (hair/grease)
+  - Pressure tested all visible drains
+  - Applied enzymatic treatment to main line
+  - Ran water test (all drains functional)
+  - Disposed of debris appropriately
 
-Partial fence repair (west side)
-  - Materials (pressure-treated boards, hardware): 247.50
-  - Labor (5.5 hrs @ $65/hr): 357.50
+Materials used:
+  - Heavy duty drain cleaner (chemical-free)
+  - Replacement washers & gasket set
+  
+Time on site: 1.5 hours
+Technician: Dave M. (Employee ID: 847)
 
-Extra: Emergency callout for storm damage assessment (no charge - warranty inspection)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-                                          SUBTOTAL: $3,288.50
-                                          
-Note: Oregon business & operations tax (9%)
-      included in labor rates. Material tax
-      calculated separately: $75.43
+SERVICE CHARGE:                              $89.00
+MATERIALS & SUPPLIES:                        $34.50
+                                            ________
+SUBTOTAL:                                   $123.50
 
-                                          TOTAL DUE: $3,363.93
+Note: No further blockage detected. Recommend annual
+drain maintenance to prevent future issues.
 
-Payment Methods: Check, Venmo, or ACH transfer
-                (Ask Patricia for bank details)
+Customer signature: _______________________
 
-Notes: 
-- Some materials leftover - can be stored on-site or removed
-- Follow-up visit needed mid-April for fence stain/seal
-- Tree removal area will need erosion control - discuss next week?
-- Invoice covers work completed 3/10-3/18. Additional spring
-  work under separate estimate if needed.
+NOTES: Customer paid in cash. Receipt issued separately.
+Do NOT bill.
 
-Thank you for your business!
 ```

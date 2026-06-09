@@ -1,85 +1,37 @@
-# SENIOR MACHINE LEARNING ENGINEER
+# Legal Compliance Analyst
 
-**Company:** Nexus Data Systems
-**Location:** San Francisco, CA (Hybrid - 3 days onsite)
-**Job Type:** Full-Time
-**Posted:** November 15, 2024
+**Organization:** Meridian Logistics Solutions
 
-## About Us
+**Location:** Chicago, IL (hybrid - 3 days onsite)
 
-Nexus Data Systems is a mid-stage AI infrastructure company serving Fortune 500 clients in financial services and healthcare. We're building the next generation of model deployment and monitoring platforms.
+We're seeking a detail-oriented Legal Compliance Analyst to join our Risk & Compliance department. Meridian Logistics Solutions operates across North America with a focus on supply chain optimization and last-mile delivery services.
 
-## The Role
+**About the Role**
 
-We're seeking a Senior Machine Learning Engineer to lead our model optimization team. You'll own the full lifecycle of ML models in production, from architecture to deployment to observability. This is not a research role—we ship code daily to production systems handling billions of inferences per month.
+You'll be responsible for monitoring regulatory changes across multiple jurisdictions, documenting our compliance posture, and liaising between operations teams and our in-house counsel. This position requires someone who can translate complex regulatory requirements into actionable compliance procedures. You'll maintain our compliance calendar, coordinate internal audits, and prepare quarterly compliance reports for executive leadership.
 
-**Key Responsibilities:**
-- Design and implement scalable ML pipeline architectures
-- Collaborate with data engineers on feature engineering at scale
-- Mentor junior ML engineers and conduct technical code reviews
-- Identify and resolve model performance degradation in production
-- Drive adoption of MLOps best practices across the organization
-- Present quarterly technical roadmaps to executive leadership
+The ideal candidate has worked in a regulated industry (transportation, logistics, financial services, or healthcare preferred) and understands the intersection of operational constraints and legal requirements. We need someone who asks good questions rather than simply checking boxes.
 
-## What We're Looking For
+**Key Responsibilities**
 
-You should have 6+ years of professional ML engineering experience, with at least 3 years in production ML environments. We need someone who understands the gap between training and serving—you've debugged inference latency issues at scale, dealt with data drift, and shipped models that actually made business impact.
+- Track DOT, EPA, and state-level labor regulation changes affecting our operations
+- Develop and maintain compliance documentation and standard operating procedures
+- Conduct internal compliance audits and remediation follow-ups
+- Prepare risk assessment reports identifying potential exposure areas
+- Support contract review process to flag compliance considerations
 
-Technical requirements:
-- Python (5+ years), experience with Kubernetes
-- Deep familiarity with PyTorch or TensorFlow
-- SQL and data warehousing concepts
-- Comfortable with distributed systems thinking
-- Experience with at least one cloud platform (AWS/GCP/Azure)
+**Required Qualifications**
 
-Nice-to-haves: Rust, experience with feature stores, knowledge of quantization/pruning techniques, background in computer vision or NLP.
+- 3-5 years experience in compliance, legal operations, or regulatory affairs
+- Strong written communication skills (you'll be drafting a lot)
+- Proficiency with Microsoft Office and document management systems
+- Understanding of logistics or transportation industry a plus, but not required
+- Bachelor's degree in business, law, or related field
 
-We care more about what you've shipped than where you went to school. If you have a portfolio of public ML work (papers, open source, blog posts), please share it.
+**What We Offer**
 
-## Compensation & Benefits
+Competitive salary commensurate with experience (we don't disclose ranges publicly, but we're above market for the Midwest), comprehensive health insurance, professional development budget, and a straightforward workplace culture. We close for a week between Christmas and New Year's.
 
-**Salary:** $185,000 - $240,000 base depending on experience
-**Equity:** 0.1% - 0.35% options package
-**Benefits:** Comprehensive medical/dental/vision, 4 weeks PTO, $10K annual learning budget, home office equipment stipend
+**To Apply**
 
-## How to Apply
-
-Submit your resume and a brief note about a production ML system you're proud of to: jobs@nexusdata.ai
-
----
-
-**Company:** The Willow Group
-**Position:** Residential Counselor - Evening Shift
-**Work Site:** Multiple locations across Minnesota
-
-Are you compassionate, patient, and interested in making a real difference in people's lives? The Willow Group operates supportive housing facilities for adults experiencing homelessness and mental health challenges. We're hiring Residential Counselors for our evening shift (3pm-11pm) across our six metro locations.
-
-As a Residential Counselor, you'll provide direct support to residents—helping with daily living skills, facilitating community activities, maintaining a safe and clean environment, and connecting people with resources. You'll work as part of a small team in each facility and report to the Program Director.
-
-**Basic qualifications:** High school diploma or GED, valid driver's license, ability to pass background check and drug screening. Most importantly, you need genuine empathy and the ability to remain calm in challenging situations.
-
-**Preferred qualifications:** Some experience in social services, mental health, or related field. Certification as a Peer Recovery Specialist is a plus but not required—we'll help you get certified.
-
-**Pay:** $18.50/hour, with shift differential. Potential for overtime.
-
-**What we offer:** Health insurance after 30 days, paid time off accrual, professional development opportunities, and the satisfaction of working with an outstanding team committed to dignity and recovery.
-
-Interested? Email Sarah Martinez at smartinez@willowgroup.org or call 612-555-0147 to schedule a conversation. We're hiring immediately.
-
----
-
-## PRODUCT OPERATIONS MANAGER
-
-**Company Name:** Bright Commerce Inc.
-**Position Title:** Product Operations Manager
-**Reports To:** VP of Product
-**Location:** Portland, OR or Austin, TX (choose one at hire)
-**Travel Required:** 15-20% (quarterly customer visits + industry conferences)
-
-### Position Summary
-
-Bright Commerce is seeking a highly organized Product Operations Manager to streamline our product development processes and enhance cross-functional collaboration. You'll be the connective tissue between product management, engineering, design, and go-to-market teams.
-
-### Core Responsibilities
-
--
+Submit your resume, cover letter, and one writing sample (2 pages or less) to: careers@meridianlogistics.net with subject line "Legal Compliance Analyst - Chicago"

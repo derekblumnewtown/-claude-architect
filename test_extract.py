@@ -1,5 +1,26 @@
+
+
+##################
 import sys
 sys.path.insert(0, '.')
+
+from projects.p2_extraction_pipeline.src.router import Router
+
+#Instantiate the extractor
+router = Router()
+router.route("projects/p2_extraction_pipeline/data/job_postings/job_posting_01.txt","job_posting")
+exit()
+
+##############
+import json
+data_to_write ={'company_name': 'Beachtree Manufacturing LLC', 'role': 'Production Scheduling Coordinator', 'city': 'Tacoma', 'state': 'WA', 'zip': '<UNKNOWN>', 'job_type': 'Full-time', 'salary': {'salary_min': 48000, 'salary_max': 55000}, 'skills': [{'skill': 'Production Scheduling', 'years': 2}, {'skill': 'ERP Systems', 'years': 0}, {'skill': 'Spreadsheet Skills', 'years': 0}, {'skill': 'Manufacturing Coordination', 'years': 2}, {'skill': 'NetSuite', 'years': 0}, {'skill': 'Communication'}]}
+        
+file_name ="projects/p2_extraction_pipeline/data/output/extracted/job_posting_01.json"
+if True:
+    with open(file_name, "w", encoding="utf-8") as f:
+        json.dump(data_to_write, f, indent=2)
+exit()
+
 from projects.p2_extraction_pipeline.src.validator import Validator
 
 validator = Validator()

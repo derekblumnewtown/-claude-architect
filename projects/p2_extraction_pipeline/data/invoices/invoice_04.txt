@@ -1,93 +1,44 @@
 ```
-INVOICE
-═══════════════════════════════════════════════════════════════
+RECEIPT - SERVICE WORK ORDER
+================================
 
-Issued By:
-Riverside Mobile Detailing
-License #: MOB-2847-CA
-Contact: (559) 234-8891
-Email: dispatch@riversideMobileDetail.local
+Customer: Maria & Family
+Location: 428 Oakwood Drive, Apt 3B
+Date Completed: March 15, 2024
 
+HVAC SYSTEM INSPECTION & MAINTENANCE
 
-Bill To:
-Fresno County Parks & Recreation Department
-Attn: Fleet Manager (name not provided)
-500 East Shaw Avenue
-Fresno, CA 93710
+Technician: Rick Paulson (License #HV-4421)
+Service Call Time: 2 hours 15 min
 
+Work Performed:
+- Cleaned blower assembly
+- Replaced cabin air filter
+- Checked refrigerant levels
+- Tested thermostat calibration
+- Inspected ductwork for leaks
 
-Invoice #: RMD-2024-001847
-Date: January 18, 2024
-Service Period: January 15-17, 2024
-Due Date: Upon Service Completion (NET 30 for Government Accounts)
+Parts Used:
+  Filter (16x25x1 MERV 8): $24.50
+  [Other materials from stock - $11.23]
 
+Labor: $89/hour × 2.25 hrs = $200.25
 
-SERVICES RENDERED
-───────────────────────────────────────────────────────────────
+---
 
-Vehicle Fleet Detail - Winter Package
-5x Full Interior Vacuum + Steam Clean
-5x Exterior Wash + Wax
-5x Engine Compartment Cleaning
-Deodorizer Treatment (all units)
+SUBTOTAL:           $236.48
+Service Fee:        $35.00
 
-Vehicle Details:
-  • 2019 Ford F-250 (Fleet ID: FSR-847) - $185.00
-  • 2020 Chevy Silverado (Fleet ID: FSR-848) - $185.00
-  • 2018 Ford F-150 (Fleet ID: FSR-?)  - $175.00  [PARTIALLY DAMAGED DURING SERVICE]
-  • 2017 Dodge Ram (Fleet ID: Unknown)  - $185.00  [CUSTOMER DID NOT PROVIDE ID]
-  • 1x Trailer Detail (enclosed, 6x10)  - $120.00
+TOTAL DUE:          $271.48
 
+METHOD: Check or Venmo (@rickpaulson_hvac)
+DUE: Upon completion (PAID - March 15)
 
-PRICING
-───────────────────────────────────────────────────────────────
+Notes: System running efficiently. 
+Recommend full duct cleaning before summer.
+Next filter change approx. 6-8 months.
 
-Subtotal:                                          $830.00
-
-Fuel Surcharge (12% - high diesel prices):        $99.60
-
-DAMAGE CLAIM ADJUSTMENT:
-  Paint Scratch - FSR-847 (our responsibility)   -$45.00
-
-Travel Fee (15 miles from shop):                  $35.00
-
-
-TOTAL BEFORE TAX:                                 $919.60
-
-Sales Tax (7.375%):                               $67.82
-
-═══════════════════════════════════════════════════════════════
-TOTAL DUE:                                        $987.42
-═══════════════════════════════════════════════════════════════
-
-
-NOTES:
-- One vehicle (FSR-847) sustained a minor paint scratch during service. 
-  We are waiving $45 from this invoice as compensation.
-- One vehicle ID missing from your fleet list. Confirmed via VIN check.
-  Please provide updated Fleet ID for record-keeping.
-- Payment can be made via: Check, ACH, or Credit Card (3% processing fee applies)
-- Invoice valid for 60 days
-
-Payment Address:
-Riverside Mobile Detailing
-P.O. Box 1823
-Fresno, CA 93786
-
-Next Service Recommended: 45 days
-
-Questions? Call dispatch at (559) 234-8891
-
-
-Authorized By: M. Rodriguez, Service Manager
-Signature: [Digital signature applied]
+Rick Paulson
+Paulson's HVAC - Trusted Since 1998
+Phone: (555) 742-0891
 ```
-
-**Edge Cases in This Invoice:**
-- Missing customer name/title
-- Vehicle ID missing/unclear for two vehicles
-- Damage credit applied (reverse line item)
-- Fuel surcharge included (not always standard)
-- Tax present but no payment terms specified
-- Mixed vehicle types in single line item group
-- Note about discrepancy requiring customer follow-up

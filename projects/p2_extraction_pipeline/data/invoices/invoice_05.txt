@@ -1,57 +1,52 @@
 ```
-INVOICE
+RECEIPT / WORK ORDER
+═══════════════════════════════════════════════════════════════
 
-Client: Morrison & Associates Legal Services
-Invoice #: INV-2024-7834
-Date: March 15, 2024
-Due: Net 45
-
-─────────────────────────────────────────────────────────────
+Date: March 14, 2024
+Reference: WO-2024-847-B
 
 FROM:
-TechVenture Solutions Inc.
-142 Innovation Drive, Suite 300
-Portland, OR 97214
-Tax ID: 94-3847562
+Riverside Auto Repair & Diagnostics
+2847 Commerce Boulevard
+Springfield, IL 62701
+Phone: (217) 555-0198
 
 TO:
-Morrison & Associates
-Attn: Finance Department
-890 Commerce Boulevard
-Seattle, WA 98101
+Michael Chen
+147 Oakwood Drive
+Springfield, IL 62704
 
-─────────────────────────────────────────────────────────────
+VEHICLE DETAILS:
+Year/Make/Model: 2019 Honda Civic - Silver
+VIN: 19HG7C5F2KL224589
+Mileage In: 67,842 miles
+Mileage Out: 67,889 miles
 
-DESCRIPTION OF SERVICES
+WORK PERFORMED:
+- Complete transmission fluid flush and refill (Mobil 1 ATF)
+- Replaced transmission pan gasket
+- Inspected and cleaned transmission filter
+- Road test - smooth shifting confirmed
+- Computer diagnostic scan (no codes present)
 
-Custom software development & consulting - Q1 2024 engagement
-per Statement of Work dated January 8, 2024
+PARTS & LABOR:
+Transmission Fluid (2.5 qts @ $16/qt)          $40.00
+Transmission Pan Gasket                         $22.50
+Filter Kit                                      $18.75
+Labor (3.5 hrs @ $85/hr)                       $297.50
+Diagnostic Scan (complimentary with service)   $0.00
+                                               ─────────
+SUBTOTAL                                       $378.75
+Sales Tax (6.25%)                              $23.67
+                                               ═════════
+TOTAL AMOUNT DUE                               $402.42
 
-Week ending 3/1:  40 hours @ $185/hr                    $7,400.00
-Week ending 3/8:  38 hours @ $185/hr                    $7,030.00
-Week ending 3/15: 42 hours @ $185/hr                    $7,770.00
+PAYMENT METHOD: Cash (received)
+NOTES: 
+Customer requested work on 3/13 evening. Job completed 3/14 morning.
+Recommend transmission service every 60K miles. Next service due ~127K mi.
+Warranty on parts: 12 months / Warranty on labor: 30 days
 
-Infrastructure setup & deployment (one-time)            $2,500.00
-
-─────────────────────────────────────────────────────────────
-
-Subtotal:                                               $24,700.00
-Sales Tax (WA - 10.25%):                                 $2,531.75
-
-TOTAL DUE:                                              $27,231.75
-
-─────────────────────────────────────────────────────────────
-
-Payment Methods:
-• ACH Transfer: TechVenture Solutions, Cascade Bank Account #447829-156
-• Check: Payable to TechVenture Solutions, mail to address above
-• Credit Card: Available upon request (3% processing fee applies)
-
-Notes: 
-- Invoice covers time through Friday, March 15
-- Ongoing weekly billing will continue through end of March
-- Contact: Alex Chen, Project Lead (a.chen@techventure.io)
-
-Please reference Invoice #INV-2024-7834 with payment.
-
+Technician: Marcus T.
+Manager Approval: _______________
 ```

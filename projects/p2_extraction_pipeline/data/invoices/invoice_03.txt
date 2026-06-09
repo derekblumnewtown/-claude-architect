@@ -1,47 +1,50 @@
 ```
-INVOICE
+RECEIPT / WORK ORDER
+================================
 
-Bill To:
-Meridian Logistics Solutions
-Attn: Accounts Payable Department
-847 Commerce Drive, Suite 200
-Charlotte, NC 28202
+Date: March 14, 2024
+Reference #: WO-2024-0847
 
-From:
-Stellar Consulting Group
-2340 Innovation Parkway
-Austin, TX 78741
-Phone: (512) 555-0147
-Email: billing@stellarconsulting.com
-Tax ID: 74-2891543
+FROM:
+Henderson & Associates Plumbing
+847 Riverside Drive
+Portland, OR 97214
+Phone: (503) 555-0142
+
+BILL TO:
+Patricia Chen
+1205 Willowbrook Lane
+Portland, OR 97215
+
+DESCRIPTION OF WORK:
+Emergency call-out - Kitchen sink backup, main line inspection
+Replaced 40ft section of cast iron drain pipe
+Installed new cleanout access point
+Pressure tested and flushed system
+
+LABOR:
+  Emergency service fee (after hours)        $150.00
+  Site visit & diagnostics (1.5 hrs)         $112.50
+  Pipe removal & replacement (4.5 hrs)       $337.50
+  Materials markup                            $85.00
+
+MATERIALS USED:
+  PVC pipe & fittings                        $240.00
+  Cleanout assembly                           $65.00
+  Coupling hardware                           $18.50
+
+SUBTOTAL: $1,008.50
+
+Discount applied (referral): -$50.00
+
+TOTAL DUE: $958.50
 
 ---
+NOTES:
+- Warranty on labor: 12 months
+- Permit required by city - not included in estimate
+- Invoice due upon completion
+- We accept cash, check, or Venmo (@hendersonplumbing)
 
-Invoice #: SC-2024-008847
-Date: March 15, 2024
-Due Date: Net 45
-
-Project: Q1 Strategic Planning & Process Optimization
-
-Description of Services:
-
-Initial consultation & stakeholder interviews (8 hours)     $1,200.00
-Process mapping & workflow analysis (12 hours)              $1,800.00
-Gap assessment report                                       $950.00
-Recommendations presentation (2 sessions)                   $400.00
-
----
-
-SUBTOTAL:        $4,350.00
-Sales Tax (7%):    $304.50
----
-TOTAL DUE:       $4,654.50
-
----
-
-Notes:
-Payment should reference invoice number. Wire transfer details available upon request.
-First session completed 3/8, final deliverables due by 4/2.
-
-Thank you for your business!
+Thank you for choosing us!
 ```

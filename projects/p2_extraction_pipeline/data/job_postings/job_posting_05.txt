@@ -1,26 +1,36 @@
-# SENIOR MATERIALS SCIENTIST - ADDITIVE MANUFACTURING
-**Cedar Ridge Advanced Manufacturing | Cincinnati, OH**
+# Senior Fermentation Scientist
 
----
+**Company:** Motus Ingredients
 
-We are seeking a Senior Materials Scientist to join our expanding Additive Manufacturing division. Cedar Ridge has pioneered composite 3D printing technology for aerospace and medical device applications over the past 12 years, and we're scaling our R&D team to meet unprecedented demand.
+**Location:** Madison, WI (hybrid arrangement)
 
-**What You'll Do:**
-The ideal candidate will lead material characterization studies, design experimental protocols for novel polymer-ceramic composites, and collaborate with our process engineering team to translate lab discoveries into production specifications. You'll own the full lifecycle from powder synthesis through mechanical testing, thermal analysis, and microstructural evaluation. Some travel to customer sites (approximately 8-12% annually) may be required for application support.
+Motus Ingredients is a biotechnology company specializing in precision fermentation for food and beverage applications. We engineer microorganisms to produce sustainable alternatives to animal-derived proteins and specialty ingredients.
 
-**Your Background:**
-- PhD in Materials Science, Chemical Engineering, or Physics (or equivalent industry experience)
-- Minimum 6 years post-graduate experience in materials development, preferably in additive manufacturing, composites, or advanced ceramics
-- Proficiency with SEM, DSC, TGA, rheology testing, and mechanical testing equipment
-- Experience managing lab budgets and cross-functional teams
-- MATLAB, Python, or similar computational modeling experience is a plus
+**About the Role**
 
-We do not require specific CAD experience, though familiarity with 3D modeling software is valued.
+We're seeking a Senior Fermentation Scientist to lead our bioreactor optimization division. You'll oversee scale-up projects from bench-top through pilot production, troubleshoot fermentation kinetics issues, and mentor junior scientists. This role requires someone comfortable with ambiguity—our fermentation processes are novel and occasionally unpredictable, meaning you'll need strong problem-solving skills and the ability to work with incomplete data.
 
-**What We Offer:**
-Competitive salary range of $125,000–$165,000 depending on experience and background. Comprehensive benefits including health/dental/vision, 401(k) matching (5%), tuition reimbursement, and access to our on-site gym and cafeteria. Flexible work arrangements: 3 days on-site in Cincinnati, 2 days remote.
+**Key Responsibilities**
 
-**About Us:**
-Cedar Ridge operates two manufacturing facilities and maintains partnerships with four major university research centers. We are an equal opportunity employer committed to building a diverse workforce.
+- Design and execute fermentation experiments across scales (5L, 50L, 200L bioreactors)
+- Monitor dissolved oxygen, pH, temperature, and metabolite production in real-time
+- Develop process control strategies and data collection protocols
+- Collaborate with upstream strain engineering and downstream purification teams
+- Write technical reports and maintain detailed batch records
+- Present findings at internal reviews and external conferences as appropriate
 
-Please submit resume, cover letter, and names of three references to careers@cedarridgeam.com. Review of applications begins February 15.
+**Required Qualifications**
+
+PhD in Microbiology, Bioengineering, or related field; minimum 6 years fermentation industry experience. Proficiency with HPLC, bioreactor software (preferably Sartorius or Applikon), and statistical analysis. Experience with both bacterial and fungal fermentations preferred. Must be comfortable working in a lab environment with biosafety level considerations.
+
+**Compensation & Benefits**
+
+Salary commensurate with experience, estimated $95K–$125K annually. Comprehensive health coverage, 401(k) match, professional development budget ($3K/year), flexible schedule with core hours 9am–3pm.
+
+**Why Join Us**
+
+We're pre-Series B and moving fast. You'll have equity options and direct impact on product commercialization timelines. Leadership has deep fermentation backgrounds and respects scientific rigor.
+
+**To Apply**
+
+Submit resume, cover letter, and one representative publication or technical report to careers@motusingredients.com. Please include your availability and relocation flexibility in your cover letter.

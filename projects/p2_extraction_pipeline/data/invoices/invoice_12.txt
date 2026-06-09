@@ -1,60 +1,77 @@
 ```
-RECEIPT & SERVICE RECORD
-════════════════════════════════════════════════════════════════
+STATEMENT OF SERVICES RENDERED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Mobile Auto Detailing - "Dan's Detail Crew"
-Service Vehicle: Van #3 (White Ford Transit)
-License: MOBDETL47
+From: Meridian Consulting Group
+      847 Commerce Drive, Suite 300
+      Denver, CO 80202
+      Phone: (303) 555-0187
+      Email: billing@meridian-cg.net
 
-Job Date: November 18, 2024
-Completed: 2:45 PM
-Location: 847 Riverside Commons, Apt 12B
+Bill To: Richardson Manufacturing LLC
+         Attn: Accounts Payable Department
+         1625 Industrial Boulevard
+         Indianapolis, IN 46202
 
-CUSTOMER INFO (Verbal Agreement)
-Name: Michael Chen (goes by "Mike")
-Phone: 555-0847
-Vehicle: 2019 Silver Honda CR-V
-License Plate: [ILLEGIBLE - customer didn't provide]
+Date Issued: November 8, 2024
+Period Covered: October 15 - November 7, 2024
+Document Reference: MC-20241108-RICHARDSON
 
-─────────────────────────────────────────────────────────────────
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-SERVICE BREAKDOWN:
+SERVICES PROVIDED:
 
-Exterior Hand Wash & Dry ........................... $35.00
-Clay Bar Treatment (light contamination) .......... $20.00
-Tire & Wheel Cleaning (includes trim) ............ $15.00
-Interior Vacuum (seats, floor, trunk) ............ $25.00
-Dashboard & Trim Detailing ........................ $18.00
-Window Cleaning (interior & exterior) ............ $12.00
+Strategic Business Assessment (onsite)        47.5 hours @ $185/hr    $8,787.50
+- October 15-17: Process mapping & interviews
+- October 22-24: Data analysis & recommendations documentation
 
-Supplies charge (microfiber cloths, clay) ........ $8.50
+Executive Briefing & Presentation              8 hours @ $225/hr      $1,800.00
 
-─────────────────────────────────────────────────────────────────
+Follow-up Consultation (remote)                3.5 hours @ $185/hr      $647.50
 
-SUBTOTAL                                         $133.50
+Expense Reimbursement:
+  Travel (airfare DTW-DEN roundtrip)                                 $487.00
+  Ground transportation & parking                                    $156.40
+  Client dinner (Oct 16, 4 attendees)                               $312.85
 
-Tip (CASH - customer handed bills)           + $20.00
-                                              ───────
-TOTAL PAID                                     $153.50
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-METHOD: Cash (3x $50 bills + $3.50 in coins)
-TIME SPENT: Approximately 1 hour 20 minutes
+Subtotal Services:                                                 $11,235.00
+Expenses:                                                            $956.25
+                                                                  ───────────
+TOTAL DUE:                                                       $12,191.25
+
+Sales Tax (Indiana 7%):                                             $853.39
+                                                                  ───────────
+GRAND TOTAL:                                                    $13,044.64
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Payment Instructions:
+ACH Transfer: Meridian Consulting Group
+  Bank: First National Business Bank
+  Account: ••••••••2847
+  Routing: 103100036
+
+Check: Make payable to Meridian Consulting Group
+       Mail to: 847 Commerce Drive, Suite 300, Denver, CO 80202
+
+Credit Card: Available upon request (3% processing fee applies)
+
+Due Date: NET 30 - Payment received by December 8, 2024
+
+Late Payment: 1.5% monthly interest applied to balances over 30 days past due
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 NOTES:
-- Customer mentioned small scratch on rear bumper (not detailed)
-- One tire pressure monitor light was on - informed customer
-- No interior stains observed
-- Recommended ceramic coating during next visit
+* Consultant: Michael J. Chen, Senior Strategy Advisor
+* Project Manager: Sarah Mitchell (sarah.mitchell@meridian-cg.net)
+* All deliverables completed per engagement letter dated September 20, 2024
+* Final report and recommendations attached separately
 
-SIGNATURE/AUTHORIZATION:
-Customer acknowledges work completed as described.
+Questions regarding this statement? Contact our accounting department at
+billing@meridian-cg.net or (303) 555-0198.
 
-Dan Chen (Operator)                Mike Chen (Customer)
-[signature illegible]               [verbal approval only]
-
-═════════════════════════════════════════════════════════════════
-
-** NO WRITTEN QUOTE PROVIDED **
-** NO FORMAL INVOICE NUMBER - USE DATE & TIME FOR REFERENCE **
-** CASH TRANSACTION - NO RECEIPT COPY GENERATED **
+Thank you for your business.
 ```

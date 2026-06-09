@@ -1,44 +1,49 @@
 ```
-INVOICE
+STATEMENT OF CHARGES
+═══════════════════════════════════════════════════════════════
 
-Bill To:
-Marcus Chen
-Apt 4B, 287 Riverside Drive
-Portland, OR 97204
+Customer: Meridian Property Solutions LLC
+Attn: Accounts Manager
+2847 Commerce Drive, Suite 12
+Denver, CO 80216
 
-From:
-Cascade Landscaping & Design
-License #OR-2847-LS
-marcus@cascadeland.local
+Date: November 14, 2024
+Reference #: MTN-2024-1147
 
-Date: 11/08/2024
-Invoice #: CSC-2024-1847
-Due: Net 30
+───────────────────────────────────────────────────────────────
 
----
+SERVICES RENDERED - NOVEMBER 2024
 
-SERVICES PROVIDED
+Quarterly site inspection & compliance review          $850.00
+  - Parking lot condition assessment
+  - Drainage system evaluation
+  - Safety signage verification
 
-Fall cleanup & leaf removal (8 hrs @ $65/hr)          $520.00
-Removal of dead maple tree - labor only              $385.00
-Disposal & hauling (2 truckloads)                    $280.00
-New mulch installation - 4 cubic yards               $156.00
+Emergency callout (11/8/24) - 2.5 hours @ $125/hr    $312.50
+  - Roof leak investigation
+  - Temporary tarping & documentation
 
-Subtotal                                            $1,341.00
-Tax (9.5%)                                           $127.40
-TOTAL DUE                                           $1,468.40
+Materials supplied:
+  Roofing membrane patch kit                           $47.99
+  Hardware & fasteners                                 $23.45
 
----
+Late fee (30 days past due on prev. balance)          $75.00
 
-Notes:
-- Tree removal completed 11/07/2024
-- Materials (mulch) supplied by client
-- Invoice includes cleanup only
-- Final invoice - estimate balance $0
+───────────────────────────────────────────────────────────────
 
-Payment methods accepted:
-Venmo, Check, or Cash
+SUBTOTAL                                             $1,308.94
+Sales Tax (CO - 7.5%)                                  $98.17
 
-Contact: (503) 555-0847
+TOTAL DUE                                            $1,407.11
 
+───────────────────────────────────────────────────────────────
+
+Previous Balance: $347.50 [OUTSTANDING]
+Total Amount Due: $1,754.61
+
+Payment to: Meridian Facilities Corp
+ACH/Bank Transfer available upon request
+Phone: (720) 555-0182
+
+Due by: December 5, 2024
 ```

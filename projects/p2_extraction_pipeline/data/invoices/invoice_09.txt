@@ -1,74 +1,45 @@
 ```
-INVOICE
+RECEIPT & SERVICE LOG
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-From: Meridian Consulting Group
-       Suite 1401, Commerce Tower
-       Denver, CO 80202
-       Phone: (303) 555-0847
+Hillside Mobile Mechanics
+License #MM-47829 | Phone: (555) 891-2247
 
-Bill To: Jackson Family Trust
-         c/o Patricia Chen, Trustee
-         2847 Pinewood Lane
-         Boulder, CO 80304
+Customer: James R. (Last name unclear - cash customer)
+Vehicle: 2016 Honda Civic - Blue sedan
+Date of Service: November 14, 2024
+Technician: Mike D. / Stan C.
 
-Invoice #: MER-2024-0891
-Date: March 15, 2024
-Due Date: Net 45
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-─────────────────────────────────────────────────────────
+WORK PERFORMED:
 
-DESCRIPTION OF SERVICES
+Came to customer's home (447 Maple Dr, Riverside area - house w/ white fence)
 
-Strategic Planning Workshop - 3 sessions
-Facilitator: Michael Rodriguez
-Location: Client offices (Boulder)
-March 2-9-16, 2024, 4 hours each
-Rate: $185/hour
-Subtotal: $2,220.00
+- Diagnostic scan & electrical fault check         $0.00 (warranty)
+- Replaced passenger side headlight assembly       $87.50
+- Top up transmission fluid                        $15.00
+- Adjusted timing (attempted - see notes)          $45.00
+- Parts markup (LED bulbs, connectors)             $23.40
 
-Executive Summary Report (20 pages)
-Research, analysis, design recommendations
-Subtotal: $950.00
+NOTES: Timing adjustment incomplete - customer said "good enough for now." 
+Advised wheel alignment needed but customer declined. 
+Left one diagnostic tool on seat (black Bluetooth scanner).
 
-Quarterly Follow-up Consultation Call
-Q1 Check-in (90 minutes)
-Rate: $250/hour
-Subtotal: $375.00
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-─────────────────────────────────────────────────────────
+SUBTOTAL:                                          $170.90
+Service call fee (travel 12 miles):                $40.00
+                                                  ──────────
+TOTAL DUE:                                         $210.90
 
-Materials & Expenses:
-  - Document production/binding        $45.00
-  - Travel (mileage, 187 mi @ $0.67)   $125.29
-  - Miscellaneous supplies             $18.71
+PAID: Cash $210.00 + $0.90 tip (coins)
+BALANCE: $0.00 ✓
 
-TOTAL EXPENSES:                        $189.00
+No receipt printed - customer requested email instead
+Email provided: j.r.automotive@[unclear domain]
 
-─────────────────────────────────────────────────────────
+Next service recommended: 3 months / 5000 miles
 
-SUMMARY
-
-Subtotal (Services):                 $3,545.00
-Subtotal (Materials/Expenses):         $189.00
-                                    ─────────
-Subtotal:                           $3,734.00
-
-Sales Tax (CO - 4.63%):                $172.81
-
-─────────────────────────────────────────────────────────
-TOTAL DUE:                          $3,906.81
-─────────────────────────────────────────────────────────
-
-Payment Methods Accepted:
-  • Check (payable to Meridian Consulting Group)
-  • ACH Transfer (contact for banking details)
-  • Credit Card (3% processing fee applied)
-
-Notes: Patricia - Per our conversation, the follow-up call 
-scheduled for April 12th can be rescheduled if needed. 
-Contact Michael directly at m.rodriguez@meridian-consult.com
-
-─────────────────────────────────────────────────────────
-Please remit payment by April 29, 2024
-Questions? Email: billing@meridian-consult.com
+Technician: MS ── Date: 11/14/24 ── Time out: 3:47 PM
 ```

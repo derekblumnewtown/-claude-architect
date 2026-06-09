@@ -1,67 +1,63 @@
 ```
-INVOICE
+RECEIPT & WORK ORDER
+═══════════════════════════════════════════════════════════════
 
-From: Meridian Consulting Group
-      Suite 1200, Commerce Tower
-      Denver, CO 80202
-      Phone: (720) 555-0147
-      Email: billing@meridian-consult.com
-      Tax ID: 84-1627549
+Morrison & Associates Consulting
+Phone: (206) 555-0847 | Email: billing@morrisonassoc.com
+License #: WA-CONS-447829
 
-Bill To: Bootstrap Ventures LLC
-         c/o Maya Chen
-         1847 Innovation Drive
-         Austin, TX 78704
+─────────────────────────────────────────────────────────────────
 
-Invoice #: MER-2024-8847
-Date: November 8, 2024
-Due Date: NET 45
+Prepared for:
+Cascade Manufacturing LLC
+Attn: Operations Manager (name not provided)
+Seattle, WA
 
----
+Date Issued: March 14, 2024
+Document ID: MA-2024-03-1847
+Project Code: CASCADE-PHASE2
 
-DESCRIPTION OF SERVICES
+─────────────────────────────────────────────────────────────────
 
-Q4 Strategic Planning Workshop (2 days)
-- Facilitation & materials
-- 12 attendees @ $850/person
+SCOPE OF WORK COMPLETED:
 
-Interim Strategy Report (draft version)
-- Research, analysis, recommendations
+Initial consultation & process audit         6.5 hrs @ $175/hr      $1,137.50
+Staff training (on-site, 2 sessions)        12.0 hrs @ $150/hr      $1,800.00
+Systems implementation & configuration       20.0 hrs @ $195/hr      $3,900.00
+Follow-up support (phone/email/onsite)       4.5 hrs @ $150/hr        $675.00
 
-Executive Coaching Sessions
-- 4 sessions × 2 hours
-- Coach: Dr. Patricia Lim
+Travel & Materials (reimbursable)                                      $420.37
+  - Mileage: 187 mi @ $0.67/mi
+  - Software licenses (temporary)
+  - Documentation & supplies
 
-Market Analysis - Healthcare Sector
-- Competitive landscape assessment
-- Pricing benchmark study
-- Trend analysis (preliminary)
+─────────────────────────────────────────────────────────────────
 
-                                          AMOUNT
-                                        --------
-Workshop Services                       $10,200.00
-Report (partial completion)              $4,500.00
-Coaching - Dr. Lim                       $3,200.00
-Market Research                          $6,750.00
-                                        ----------
-Subtotal                                $24,650.00
-Expenses (travel, materials)             $1,847.32
-                                        ----------
-TOTAL DUE                               $26,497.32
+SUBTOTAL                                                          $7,932.87
 
----
+Sales Tax (WA - 10.25%)                                             $813.12
 
-NOTES:
-- Market Analysis final version due Nov 22
-- Report completion contingent on client feedback by Nov 15
-- Travel expenses include flights DEN-AUS (11/3-11/5) and ground transport
-- Please note: One coaching session (11/12) rescheduled to 12/3 - will be invoiced next month
+TOTAL DUE                                                         $8,745.99
 
-Payment Method: Wire transfer preferred
-Bank: First National Bank of Colorado
-Account: [REDACTED - sent separately]
+─────────────────────────────────────────────────────────────────
 
-Questions? Contact: billing@meridian-consult.com or (720) 555-0147 ext. 304
+PAYMENT METHOD:
+☑ Invoice (due within 30 days of completion)
+☐ Credit card (Visa/MC/AMEX)
+☐ ACH transfer (details available upon request)
 
-Thank you for your business!
+Balance Outstanding from Previous Work:        None recorded
+
+Notes:
+- All deliverables completed as per Statement of Work dated Feb 28, 2024
+- Final payment expected by April 14, 2024
+- Invoice covers work performed Feb 29 - March 14, 2024
+- Client signature required below for time verification
+
+AUTHORIZATIONS:
+Prepared by: Jennifer R. (ID: JR-4472)
+Client Acknowledgment: ______________________  Date: _______
+
+Status: PENDING PAYMENT
+Next Review: April 15, 2024 (if unpaid)
 ```
